@@ -9,7 +9,8 @@ For power analysis I simulate D flip flop using pass transistor, transmission ga
 Simulations done on PSPICE which runs under windows, so no need of linux commands.
 For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for NMOS and PMOS transistors.
 
-Set UP for Simulation:
+Set up for Simulation:-
+
 First install PSPICE from any available site. You can take help from any available video on youtube that how to downlod PSPICE in window.AS it runs under window no need to worry about to change operating system or create virtual environment of linux.After installation of PSPICE follow following instructions:
 1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
 2. Draw schematic.
