@@ -1,0 +1,190 @@
+(ExpressProject "INTERN"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "C:\Cadence\SPB_16.6\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "C:\Cadence\SPB_16.6\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_16.6\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "C:\Cadence\SPB_16.6\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_16.6\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "C:\Cadence\SPB_16.6\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_16.6\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "C:\Cadence\SPB_16.6\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "C:\Cadence\SPB_16.6\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "C:\Cadence\SPB_16.6\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "intern.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Netlist_TAB "4")
+    (PSPICE_Output_File "INTERN-PSpiceFiles\MUX_PT")
+    (PSPICE_View_Output "FALSE")
+    (PSPICE_Subcircuit_Format "TRUE")
+    (PSPICE_Do_DRC_Markers "FALSE")
+    (PSPICE_Net_Name_Pref "TRUE")
+    (PSPICE_Hier_Format "FALSE")
+    (PSPICE_Hier_Descend "TRUE")
+    (PSPICE_Hier_DoNot_Descend "FALSE")
+    (PSPICE_Alt_Template "PSpiceTemplate")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\intern-pspicefiles\mux\mux.net"
+      (Type "Report"))
+    (File ".\intern-pspicefiles\mux\mux.lib"
+      (Type "Report"))
+    (File ".\intern-pspicefiles\standard_circuits\standard_circuits.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\intern-pspicefiles\intern.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\intern-pspicefiles\intern.lib")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\intern-pspicefiles\standard_circuits\bias.sim"
+        (DisplayName "STANDARD_CIRCUITS-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\intern-pspicefiles\standard_circuits\c.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\intern-pspicefiles\standard_circuits\c.sim"
+        (DisplayName "STANDARD_CIRCUITS-c")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "D:\ORCAD10.5_15.7\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN
+      (FullPartName "MbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakP
+      (FullPartName "MbreakP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN4D
+      (FullPartName "MbreakN4D.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
+  (MPSSessionName "Charu")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "E:\New folder 1\intern.dsn")
+      (Path "Design Resources" "E:\New folder 1\intern.dsn" "STANDARD_CIRCUITS")
+      (Path "Outputs")
+      (Select "Design Resources" "E:\New folder 1\intern.dsn"
+         "STANDARD_CIRCUITS" "LINE DECODER"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 314"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1160 26 383")
+        (Scroll "0 76")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\NEW FOLDER 1\INTERN.DSN")
+      (Schematic "STANDARD_CIRCUITS")
+      (Page "LINE DECODER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1212 78 435")
+        (Scroll "-58 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\NEW FOLDER 1\INTERN.DSN")
+      (Schematic "STANDARD_CIRCUITS")
+      (Page "TG_MUX"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1186 52 409")
+        (Scroll "-58 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\NEW FOLDER 1\INTERN.DSN")
+      (Schematic "STANDARD_CIRCUITS")
+      (Page "PT_mux"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1212 78 435")
+        (Scroll "-58 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\NEW FOLDER 1\INTERN.DSN")
+      (Schematic "STANDARD_CIRCUITS")
+      (Page "PT_D_FLIP_FLOP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1238 104 461")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\NEW FOLDER 1\INTERN.DSN")
+      (Schematic "STANDARD_CIRCUITS")
+      (Page "STACK")))
+  (ISPCBBASICLICENSE "false"))
