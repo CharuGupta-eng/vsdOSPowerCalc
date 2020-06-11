@@ -23,6 +23,10 @@ First install PSPICE from any available site. You can take help from any availab
 9. Simulation window open, Trace -> Add trace -> select required current or voltage -> ok.
 10. You get output on simulation window.
 
+Calculation of power in PSPICE:
+1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
+2. Power dissipation in uW is obtained.
+
 Following are link of netlist and schematic for each schematic cicuit.
 I. D FF using PT
 
