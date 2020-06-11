@@ -28,6 +28,7 @@ Calculation of power in PSPICE:
 2. Power dissipation in uW is obtained.
 
 Following are link of netlist and schematic for each schematic cicuit.
+
 I. D FF using PT
 
 https://drive.google.com/file/d/1-Qz6o6Wm2RaIxSafMLSX_6v8VHD1Qo2X/view?usp=drivesdk
