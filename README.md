@@ -42,7 +42,7 @@ https://drive.google.com/file/d/1-RG1rZ0E-Y6SEfRdG4SP367r4oQTMnEl/view?usp=drive
 
 II. D FF using TG
 
-<img src="C:\Users\Charu\Pictures\New folder\POWERPT.png">
+<img src="C:\Users\Charu\Pictures\New folder\POWERPT">
 
 <img src="C:\Users\Charu\Pictures\D FF TG">
 
