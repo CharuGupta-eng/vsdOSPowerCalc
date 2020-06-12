@@ -30,7 +30,12 @@ First install PSPICE from any available site. After installation of PSPICE follo
 Following are cicuits,waveforms,link of netlist and schematic for each schematic cicuit.
 
 I. D FF using PT
-![](https://user-images.githubusercontent.com/66687579/84519939-65e73080-acf0-11ea-90a6-c332d7b88206.png)
+
+
+
+
+
+![](https://user-images.githubusercontent.com/66687579/84521097-2ae5fc80-acf2-11ea-9c34-c959429fc6d2.png)
 
 
 ![](C:\Users\Charu\Pictures\New folder\POWERPT)
