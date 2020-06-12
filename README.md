@@ -61,12 +61,6 @@ I. D FF using PT
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84523098-5dddbf80-acf5-11ea-86d5-789cc9c1483a.png)
-
-
-
-
-
 
 
 
@@ -96,6 +90,12 @@ https://drive.google.com/file/d/1-lznv8iIqriBJU5C5aUJQyrcWUzIxGBX/view?usp=drive
 https://drive.google.com/file/d/1-mQvoLWdumY3pb7ooL5A7g9N2HFj7YFQ/view?usp=drivesdk
 
 III. D FF using stack transistor
+
+
+
+![](https://user-images.githubusercontent.com/66687579/84524727-0b51d280-acf8-11ea-920b-c28f19492a05.png)
+![](https://user-images.githubusercontent.com/66687579/84524751-173d9480-acf8-11ea-9a9b-e7d4446463ab.png)
+![](https://user-images.githubusercontent.com/66687579/84524791-2886a100-acf8-11ea-8627-e424517d5bd1.png)
 
 https://drive.google.com/file/d/1-W-p8KwofiCTFQ3EGK-6VTnlduYN6bZI/view?usp=drivesdk
 
