@@ -115,6 +115,12 @@ https://drive.google.com/file/d/107Y7yn6Itx4Ic8URhk2LtPF9SnEFYk7E/view?usp=drive
 
 VI. MUX using PT
 
+
+
+![](https://user-images.githubusercontent.com/66687579/84526325-bebbc680-acfa-11ea-8248-b40b62921c6a.png)
+![](https://user-images.githubusercontent.com/66687579/84526361-cb401f00-acfa-11ea-96fb-cd49e5b3b995.png)
+![](https://user-images.githubusercontent.com/66687579/84526461-f4f94600-acfa-11ea-93f1-c0ab4db6021a.png)
+
 https://drive.google.com/file/d/10BkdhQN01ubxz_Lfkw5lUAK5AMNX-9y4/view?usp=drivesdk
 
 https://drive.google.com/file/d/1093YPUHQkIPShb2HFkMLbze1VHGu1s35/view?usp=drivesdk
