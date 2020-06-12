@@ -31,7 +31,7 @@ Following are cicuits,waveforms,link of netlist and schematic for each schematic
 
 I. D FF using PT
 
-![](C:\Users\Charu\Pictures\New folder\POWERPT.png)
+![](C:\Users\Charu\Pictures\New folder\POWERPT)
 
 ![](C:\Users\Charu\Pictures\R D FF)
 
