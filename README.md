@@ -1,17 +1,17 @@
 # OS-power-analysis-tool
 Power analysis has materialized as a principal theme in today’s world of semiconductor industries. Very Large Scaled Integrated Circuits (VLSI) are far beyond human ability because of complexity. So to analyse power in these circuits we use open source computer aided tools, plenty of tools are available but most of them are costly. I designed open source power analysis tool for the academic use which analyse power dissipation (average switching and leakage power) efficiently.
 
-Power analysis-
+## Power analysis
 Power analysis of design can be reconnoitred at several levels such as system level, architectural level, logic level, circuit level and device level. Power analyser is a tool which determines how much power is utilize by a system or circuit. In this process we give circuits as input along with few operating conditions to power analyser to get report about the power. 
 
 For power analysis I simulate D flip flop using pass transistor, transmission gate, pass transistor with stacking of transistor. Simulate 2-4 line decoder using CMOS logic and TG, DVL alternatively. Simulate 2-1 MUX using pass transistor, transmission gate, MTCMOS logic. Generate netlist and input output and power(V * I) waveform for all schematic circuit.
 
 Simulations done on PSPICE which runs under windows, so no need of linux commands.
-For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for NMOS and PMOS transistors.
+For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for NMOS and PMOS transistors.In this project i used TSMC 180nm need to change to OSU018.
 
-Set up for Simulation:-
+### Steps for Simulation on Window
 
-First install PSPICE from any available site. You can take help from any available video on youtube that how to downlod PSPICE in window.AS it runs under window no need to worry about to change operating system or create virtual environment of linux.After installation of PSPICE follow following instructions:
+First install PSPICE from any available site. After installation of PSPICE follow following instructions:
 1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
 2. Draw schematic.
 3. Right click on nmos -> Edit properties -> enter required value of W and L.
@@ -23,13 +23,18 @@ First install PSPICE from any available site. You can take help from any availab
 9. Simulation window open, Trace -> Add trace -> select required current or voltage -> ok.
 10. You get output on simulation window.
 
-Calculation of power in PSPICE:
+### Calculation of power in PSPICE:
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
-Following are link of netlist and schematic for each schematic cicuit.
+Following are cicuits,waveforms,link of netlist and schematic for each schematic cicuit.
 
 I. D FF using PT
+
+![](C:\Users\Charu\Pictures\images of intern project)
+
+![](C:\Users\Charu\Pictures\R D FF)
+
 
 https://drive.google.com/file/d/1-Qz6o6Wm2RaIxSafMLSX_6v8VHD1Qo2X/view?usp=drivesdk
 
