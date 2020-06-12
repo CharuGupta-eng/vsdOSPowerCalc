@@ -48,23 +48,7 @@ I. D FF using PT
 ![](https://user-images.githubusercontent.com/66687579/84521659-f9216580-acf2-11ea-91dc-53fd729331e7.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](https://user-images.githubusercontent.com/66687579/84529828-c03bbd80-acff-11ea-90a4-7f3b1884de1d.png)
 
                             
 https://drive.google.com/file/d/1-Qz6o6Wm2RaIxSafMLSX_6v8VHD1Qo2X/view?usp=drivesdk
