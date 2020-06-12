@@ -87,6 +87,7 @@ II. D FF using TG
 
 
 ![](https://user-images.githubusercontent.com/66687579/84522947-2242f580-acf5-11ea-8c3f-53da93747b8f.png)
+![](https://user-images.githubusercontent.com/66687579/84523400-dfcde880-acf5-11ea-83eb-bb9516af69f1.png)
 
 
 https://drive.google.com/file/d/1-lznv8iIqriBJU5C5aUJQyrcWUzIxGBX/view?usp=drivesdk
