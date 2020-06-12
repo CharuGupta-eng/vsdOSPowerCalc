@@ -55,7 +55,6 @@ I. D FF using PT
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84522385-21f62a80-acf4-11ea-8f76-c56b2bfc0443.png)
 
 
 
@@ -82,7 +81,7 @@ II. D FF using TG
 
 ![](https://user-images.githubusercontent.com/66687579/84522947-2242f580-acf5-11ea-8c3f-53da93747b8f.png)
 ![](https://user-images.githubusercontent.com/66687579/84523098-5dddbf80-acf5-11ea-86d5-789cc9c1483a.png)
-![](https://user-images.githubusercontent.com/66687579/84523400-dfcde880-acf5-11ea-83eb-bb9516af69f1.png)
+
 
 
 https://drive.google.com/file/d/1-lznv8iIqriBJU5C5aUJQyrcWUzIxGBX/view?usp=drivesdk
@@ -118,7 +117,7 @@ VI. MUX using PT
 
 
 ![](https://user-images.githubusercontent.com/66687579/84526325-bebbc680-acfa-11ea-8248-b40b62921c6a.png)
-![](https://user-images.githubusercontent.com/66687579/84526361-cb401f00-acfa-11ea-96fb-cd49e5b3b995.png)
+![](https://user-images.githubusercontent.com/66687579/84527761-1eff3800-acfc-11ea-8746-c639000a1c20.png)
 ![](https://user-images.githubusercontent.com/66687579/84526461-f4f94600-acfa-11ea-93f1-c0ab4db6021a.png)
 
 https://drive.google.com/file/d/10BkdhQN01ubxz_Lfkw5lUAK5AMNX-9y4/view?usp=drivesdk
@@ -126,6 +125,10 @@ https://drive.google.com/file/d/10BkdhQN01ubxz_Lfkw5lUAK5AMNX-9y4/view?usp=drive
 https://drive.google.com/file/d/1093YPUHQkIPShb2HFkMLbze1VHGu1s35/view?usp=drivesdk
 
 VIi. MUX using TG
+![](https://user-images.githubusercontent.com/66687579/84527660-e7908b80-acfb-11ea-87e9-5e1346a2c117.png)
+![](https://user-images.githubusercontent.com/66687579/84527691-f5dea780-acfb-11ea-82cc-e35407ed5008.png)
+![](https://user-images.githubusercontent.com/66687579/84527711-02630000-acfc-11ea-9166-546ba8a8f74b.png)
+
 
 https://drive.google.com/file/d/10Cd7TSPhKGEJNzAxd6wi0T6_u7PXPAnj/view?usp=drivesdk
 
