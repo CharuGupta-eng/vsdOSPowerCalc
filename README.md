@@ -31,7 +31,7 @@ Following are cicuits,waveforms,link of netlist and schematic for each schematic
 
 I. D FF using PT
 
-![](C:\Users\Charu\Pictures\images of intern project)
+![](C:\Users\Charu\Pictures\New folder\POWERPT.png)
 
 ![](C:\Users\Charu\Pictures\R D FF)
 
@@ -41,7 +41,10 @@ https://drive.google.com/file/d/1-Qz6o6Wm2RaIxSafMLSX_6v8VHD1Qo2X/view?usp=drive
 https://drive.google.com/file/d/1-RG1rZ0E-Y6SEfRdG4SP367r4oQTMnEl/view?usp=drivesdk
 
 II. D FF using TG
-<img src="C:\Users\Charu\Pictures\R D FF">
+
+<img src="C:\Users\Charu\Pictures\New folder\POWERPT.png">
+
+<img src="C:\Users\Charu\Pictures\D FF TG">
 
 https://drive.google.com/file/d/1-lznv8iIqriBJU5C5aUJQyrcWUzIxGBX/view?usp=drivesdk
 
