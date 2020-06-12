@@ -55,7 +55,7 @@ I. D FF using PT
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84522385-21f62a80-acf4-11ea-8f76-c56b2bfc0443.png
+![](https://user-images.githubusercontent.com/66687579/84522385-21f62a80-acf4-11ea-8f76-c56b2bfc0443.png)
 
 
 
