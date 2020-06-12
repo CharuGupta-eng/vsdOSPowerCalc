@@ -102,15 +102,26 @@ https://drive.google.com/file/d/1-ahe3T0Qigpj3NzMgtzMWJ7X8R79Tm2L/view?usp=drive
 
 IV. Line decoder using CMOS LOGIC 
 
+
+
+![](https://user-images.githubusercontent.com/66687579/84528701-c9c42600-acfd-11ea-8c86-99fce7130868.png)
+![](https://user-images.githubusercontent.com/66687579/84528721-d21c6100-acfd-11ea-8db2-9f70799740a7.png)
+
+
 https://drive.google.com/file/d/10Dn1FV497KkFlDOh19ivO5R4SZGn7gFg/view?usp=drivesdk
 
 https://drive.google.com/file/d/10E7k3WRvHW8QXFM2IU9uHhiwSedZV1Cl/view?usp=drivesdk
 
 V. Line decoder using alternate DVL and TG
 
+
+![](https://user-images.githubusercontent.com/66687579/84528816-fb3cf180-acfd-11ea-8911-e188f1ce04d6.png)
+![](https://user-images.githubusercontent.com/66687579/84528838-05f78680-acfe-11ea-9576-8b2ee2568358.png)
 https://drive.google.com/file/d/1-pyJoCZdphJSDjtA_n_gLpu5T3Gc8uPG/view?usp=drivesdk
 
 https://drive.google.com/file/d/107Y7yn6Itx4Ic8URhk2LtPF9SnEFYk7E/view?usp=drivesdk
+
+
 
 VI. MUX using PT
 
