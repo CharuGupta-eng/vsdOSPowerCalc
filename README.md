@@ -58,9 +58,9 @@ I. D FF using PT
 
 
                             
-https://drive.google.com/file/d/1-Qz6o6Wm2RaIxSafMLSX_6v8VHD1Qo2X/view?usp=drivesdk
 
-https://drive.google.com/file/d/1-RG1rZ0E-Y6SEfRdG4SP367r4oQTMnEl/view?usp=drivesdk
+
+
 
 II. D FF using TG
 
@@ -94,9 +94,9 @@ II. D FF using TG
 
 
 
-https://drive.google.com/file/d/1-lznv8iIqriBJU5C5aUJQyrcWUzIxGBX/view?usp=drivesdk
 
-https://drive.google.com/file/d/1-mQvoLWdumY3pb7ooL5A7g9N2HFj7YFQ/view?usp=drivesdk
+
+
 
 III. D FF using stack transistor
 
@@ -125,9 +125,9 @@ III. D FF using stack transistor
 
 ![](https://user-images.githubusercontent.com/66687579/84524791-2886a100-acf8-11ea-8627-e424517d5bd1.png)
 
-https://drive.google.com/file/d/1-W-p8KwofiCTFQ3EGK-6VTnlduYN6bZI/view?usp=drivesdk
 
-https://drive.google.com/file/d/1-ahe3T0Qigpj3NzMgtzMWJ7X8R79Tm2L/view?usp=drivesdk
+
+
 
 IV. Line decoder using CMOS LOGIC 
 
@@ -171,9 +171,9 @@ V. Line decoder using alternate DVL and TG
 
 
 
-https://drive.google.com/file/d/1-pyJoCZdphJSDjtA_n_gLpu5T3Gc8uPG/view?usp=drivesdk
 
-https://drive.google.com/file/d/107Y7yn6Itx4Ic8URhk2LtPF9SnEFYk7E/view?usp=drivesdk
+
+
 
 
 
@@ -208,9 +208,9 @@ VI. MUX using PT
 
 ![](https://user-images.githubusercontent.com/66687579/84526461-f4f94600-acfa-11ea-93f1-c0ab4db6021a.png)
 
-https://drive.google.com/file/d/10BkdhQN01ubxz_Lfkw5lUAK5AMNX-9y4/view?usp=drivesdk
 
-https://drive.google.com/file/d/1093YPUHQkIPShb2HFkMLbze1VHGu1s35/view?usp=drivesdk
+
+
 
 VIi. MUX using TG 
                                        
@@ -245,9 +245,9 @@ VIi. MUX using TG
 
 
 
-https://drive.google.com/file/d/10Cd7TSPhKGEJNzAxd6wi0T6_u7PXPAnj/view?usp=drivesdk
 
-https://drive.google.com/file/d/10CEjkhBNovUZkX1Fmw18yxPHbI_eev0z/view?usp=drivesdk
+
+
 
 ###### Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
