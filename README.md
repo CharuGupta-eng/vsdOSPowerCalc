@@ -37,7 +37,7 @@ I. D FF using PT
 
 ![](https://user-images.githubusercontent.com/66687579/84521097-2ae5fc80-acf2-11ea-9c34-c959429fc6d2.png)
 
-                  SCHEMATIC 
+                                                SCHEMATIC 
 
 
 
@@ -45,7 +45,7 @@ I. D FF using PT
 
 
 
-![]((https://user-images.githubusercontent.com/66687579/84521659-f9216580-acf2-11ea-91dc-53fd729331e7.png)
+![](https://user-images.githubusercontent.com/66687579/84521659-f9216580-acf2-11ea-91dc-53fd729331e7.png)
 
 
 
