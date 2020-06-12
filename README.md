@@ -27,14 +27,14 @@ First install PSPICE from any available site. After installation of PSPICE follo
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
-Following are cicuits,waveforms,link of netlist and schematic for each schematic cicuit.
+##### Following are cicuit schematic,input output waveforms,power calculation,link of netlist and schematic file for each schematic cicuit.
 
 I. D FF using PT
 
 
 
 
-
+                                              Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84521097-2ae5fc80-acf2-11ea-9c34-c959429fc6d2.png)
 
                                                 
@@ -44,10 +44,10 @@ I. D FF using PT
 
 
 
-
+                                            Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84521659-f9216580-acf2-11ea-91dc-53fd729331e7.png)
 
-
+                                            Power Calculation
 ![](https://user-images.githubusercontent.com/66687579/84529828-c03bbd80-acff-11ea-90a4-7f3b1884de1d.png)
 
                             
@@ -62,9 +62,11 @@ II. D FF using TG
 
 
 
-
+                                            Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84522947-2242f580-acf5-11ea-8c3f-53da93747b8f.png)
+                                           Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84523098-5dddbf80-acf5-11ea-86d5-789cc9c1483a.png)
+                                           Power Calculation
 ![](https://user-images.githubusercontent.com/66687579/84530960-689e5180-ad01-11ea-99bd-3fc8b6396c54.png)
 
 
@@ -76,9 +78,11 @@ https://drive.google.com/file/d/1-mQvoLWdumY3pb7ooL5A7g9N2HFj7YFQ/view?usp=drive
 III. D FF using stack transistor
 
 
-
+                                                Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84524727-0b51d280-acf8-11ea-920b-c28f19492a05.png)
+                                               Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84524751-173d9480-acf8-11ea-9a9b-e7d4446463ab.png)
+                                                Power Calculation
 ![](https://user-images.githubusercontent.com/66687579/84524791-2886a100-acf8-11ea-8627-e424517d5bd1.png)
 
 https://drive.google.com/file/d/1-W-p8KwofiCTFQ3EGK-6VTnlduYN6bZI/view?usp=drivesdk
@@ -88,8 +92,9 @@ https://drive.google.com/file/d/1-ahe3T0Qigpj3NzMgtzMWJ7X8R79Tm2L/view?usp=drive
 IV. Line decoder using CMOS LOGIC 
 
 
-
+                                             Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84528701-c9c42600-acfd-11ea-8c86-99fce7130868.png)
+                                            Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84528721-d21c6100-acfd-11ea-8db2-9f70799740a7.png)
 
 
@@ -99,8 +104,9 @@ https://drive.google.com/file/d/10E7k3WRvHW8QXFM2IU9uHhiwSedZV1Cl/view?usp=drive
 
 V. Line decoder using alternate DVL and TG
 
-
+                                             Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84528816-fb3cf180-acfd-11ea-8911-e188f1ce04d6.png)
+                                           Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84528838-05f78680-acfe-11ea-9576-8b2ee2568358.png)
 https://drive.google.com/file/d/1-pyJoCZdphJSDjtA_n_gLpu5T3Gc8uPG/view?usp=drivesdk
 
@@ -111,18 +117,23 @@ https://drive.google.com/file/d/107Y7yn6Itx4Ic8URhk2LtPF9SnEFYk7E/view?usp=drive
 VI. MUX using PT
 
 
-
+                                           Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84526325-bebbc680-acfa-11ea-8248-b40b62921c6a.png)
+                                          Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84527761-1eff3800-acfc-11ea-8746-c639000a1c20.png)
+                                          Power Calculation
 ![](https://user-images.githubusercontent.com/66687579/84526461-f4f94600-acfa-11ea-93f1-c0ab4db6021a.png)
 
 https://drive.google.com/file/d/10BkdhQN01ubxz_Lfkw5lUAK5AMNX-9y4/view?usp=drivesdk
 
 https://drive.google.com/file/d/1093YPUHQkIPShb2HFkMLbze1VHGu1s35/view?usp=drivesdk
 
-VIi. MUX using TG
+VIi. MUX using TG 
+                                        Circuit Schematic
 ![](https://user-images.githubusercontent.com/66687579/84527660-e7908b80-acfb-11ea-87e9-5e1346a2c117.png)
+                                       Input Output Waveform
 ![](https://user-images.githubusercontent.com/66687579/84527691-f5dea780-acfb-11ea-82cc-e35407ed5008.png)
+                                       Power Calculation
 ![](https://user-images.githubusercontent.com/66687579/84527711-02630000-acfc-11ea-9166-546ba8a8f74b.png)
 
 
@@ -130,7 +141,7 @@ https://drive.google.com/file/d/10Cd7TSPhKGEJNzAxd6wi0T6_u7PXPAnj/view?usp=drive
 
 https://drive.google.com/file/d/10CEjkhBNovUZkX1Fmw18yxPHbI_eev0z/view?usp=drivesdk
 
-Contact information.
+###### Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
 2. Kunal Ghosh Director, VSD Corp.Pvt. Ltd. kunalpghosh@gmail.com
 3. Philipp Guhring Software Architect at LibreSilicon Association pg@futureware.at
