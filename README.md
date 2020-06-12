@@ -145,9 +145,9 @@ IV. Line decoder using CMOS LOGIC
 ![](https://user-images.githubusercontent.com/66687579/84528721-d21c6100-acfd-11ea-8db2-9f70799740a7.png)
 
 
-https://drive.google.com/file/d/10Dn1FV497KkFlDOh19ivO5R4SZGn7gFg/view?usp=drivesdk
 
-https://drive.google.com/file/d/10E7k3WRvHW8QXFM2IU9uHhiwSedZV1Cl/view?usp=drivesdk
+
+
 
 V. Line decoder using alternate DVL and TG
 
