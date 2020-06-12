@@ -68,7 +68,7 @@ I. D FF using PT
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84523147-72ba5300-acf5-11ea-8724-466d7c5ab6df.png)
+
 
 
 
@@ -87,6 +87,7 @@ II. D FF using TG
 
 
 ![](https://user-images.githubusercontent.com/66687579/84522947-2242f580-acf5-11ea-8c3f-53da93747b8f.png)
+![](https://user-images.githubusercontent.com/66687579/84523098-5dddbf80-acf5-11ea-86d5-789cc9c1483a.png)
 ![](https://user-images.githubusercontent.com/66687579/84523400-dfcde880-acf5-11ea-83eb-bb9516af69f1.png)
 
 
