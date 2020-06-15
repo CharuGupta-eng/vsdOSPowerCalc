@@ -70,6 +70,8 @@ First install PSPICE from any available site. After installation of PSPICE follo
 10. You get output on simulation window.
 
 
+
+
 ![image](https://user-images.githubusercontent.com/66687579/84695148-02ffce80-af68-11ea-822c-019f9e4010ea.png)
 
 
