@@ -19,6 +19,11 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 
 
+
+![](https://user-images.githubusercontent.com/66687579/84686322-5b7b9f80-af59-11ea-9a54-36eb751522b8.png)
+
+
+
 2. Draw schematic.
 3. Right click on nmos -> Edit properties -> enter required value of W and L.
 
