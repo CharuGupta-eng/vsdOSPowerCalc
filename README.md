@@ -13,6 +13,12 @@ For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for
 
 First install PSPICE from any available site. After installation of PSPICE follow following instructions:
 1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
+
+
+![](https://user-images.githubusercontent.com/66687579/84684588-7ac4fd80-af56-11ea-8086-9f3bd5d6c547.png)
+
+
+
 2. Draw schematic.
 3. Right click on nmos -> Edit properties -> enter required value of W and L.
 4. Right click on nmos -> Edit Pspice Model -> enter required model parameter file of either TSMC 180nm or OSU018.
