@@ -21,7 +21,17 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 2. Draw schematic.
 3. Right click on nmos -> Edit properties -> enter required value of W and L.
+
+
+![](https://user-images.githubusercontent.com/66687579/84685743-6550d300-af58-11ea-85d0-416e162b62d3.png)
+
+
+
 4. Right click on nmos -> Edit Pspice Model -> enter required model parameter file of either TSMC 180nm or OSU018.
+
+
+
+
 5. Repeat 3 and 4 steps for pmos.
 6. Save schematic.
 7. PSpice -> edit simulation profile -> select required analysis -> Apply -> Ok.
