@@ -41,6 +41,12 @@ First install PSPICE from any available site. After installation of PSPICE follo
 5. Repeat 3 and 4 steps for pmos.
 6. Save schematic.
 7. PSpice -> edit simulation profile -> select required analysis -> Apply -> Ok.
+
+
+![](https://user-images.githubusercontent.com/66687579/84687216-fb85f880-af5a-11ea-9798-486f39fca773.png)
+
+
+
 8. TO run, PSpice -> Run.
 
 ![](https://user-images.githubusercontent.com/66687579/84687023-9f22d900-af5a-11ea-98a3-9b22a2b221e4.png)
