@@ -31,6 +31,7 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 
 
+![](https://user-images.githubusercontent.com/66687579/84686035-da240d00-af58-11ea-9dd7-9cd12adba68e.png)
 
 5. Repeat 3 and 4 steps for pmos.
 6. Save schematic.
