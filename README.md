@@ -82,7 +82,7 @@ First install PSPICE from any available site. After installation of PSPICE follo
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
-##### Following are cicuit schematic,input output waveforms,power calculation,link of netlist and schematic file for each schematic cicuit.
+##### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
 I. D FF using PT
 
