@@ -42,6 +42,11 @@ First install PSPICE from any available site. After installation of PSPICE follo
 6. Save schematic.
 7. PSpice -> edit simulation profile -> select required analysis -> Apply -> Ok.
 8. TO run, PSpice -> Run.
+
+![](https://user-images.githubusercontent.com/66687579/84687023-9f22d900-af5a-11ea-98a3-9b22a2b221e4.png)
+
+
+
 9. Simulation window open, Trace -> Add trace -> select required current or voltage -> ok.
 10. You get output on simulation window.
 
