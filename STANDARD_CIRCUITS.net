@@ -1,0 +1,346 @@
+* source INTERN
+M_M1         OUT N14382 N14417 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+M_M3         N14406 N14382 OUT N14435 Mbreakp  
++ L=.18u  
++ W=.72u         
+V_V3         N14417 0  
++PULSE 1.8V 0V 0 1n 1n 2u 4u
+V_V4         N14435 0 1.8Vdc
+V_V2         N14382 0  
++PULSE 1.8V 0V 0 1n 1n 1u 2u
+V_V1         N14406 0  
++PULSE 1.8V 0 0 1n 1n 3u 6u
+C_C1         0 OUT  20p  TC=0,0 
+M_M4         N15968 N15932 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M5         N15968 N15932 N15948 N15948 MbreakP  
++ L=.18u  
++ W=1.8u         
+V_V5         N15948 0 1.8Vdc
+V_V6         N15932 0  
++PULSE 1.8V 0 0 1n 1n 1u 2u
+M_M6         OUTPUTTG N15932 N16318 N17134 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M7         N16318 N15968 OUTPUTTG 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M8         OUTPUTTG N15968 N16494 N17226 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M9         N16494 N15932 OUTPUTTG 0 MbreakN  
++ L=.18u  
++ W=.72u         
+C_C2         0 OUTPUTTG  20p  TC=0,0 
+V_V7         N17134 0 1.8Vdc
+V_V9         N17226 0 1.8Vdc
+V_V10         N16318 0  
++PULSE 1.8V 0V 0 1n 1n 3u 6u
+V_V11         N16494 0  
++PULSE 1.8V 0V 0 1n 1n 2u 4u
+V_V13         N23963 0 1.8Vdc
+V_V12         N23805 0 1.8Vdc
+M_M14         QBAR N24083 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M18         N23763 N24629 N25438 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M13         N23981 N23823 N23963 N23963 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V16         N24597 0 1.8Vdc
+M_M12         N23981 N23823 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M21         N24083 N24629 N23981 N24533 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M20         Q N24629 N24083 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M10         N23823 N23763 0 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+V_V14         N24125 0 1.8Vdc
+V_V15         N24533 0 1.8Vdc
+M_M19         N23981 N24629 N23763 N24597 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M15         QBAR N24083 N24125 N24125 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M11         N23823 N23763 N23805 N23805 Mbreakp  
++ L=.18u  
++ W=.72u         
+M_M17         Q QBAR N24275 N24275 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M16         Q QBAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V8         N24275 0 1.8Vdc
+V_V17         N25438 0  
++PULSE 0 1.8V 0u 1n 1n 3u 6u
+V_V18         N24629 0  
++PULSE 0 1.8V 0u 1n 1n 2u 4u
+M_M23         N29585 CLK N29597 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M24         N29597 CLKBAR N29585 N29629 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M25         N29781 N29597 N29785 N29785 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M26         N29781 N29597 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V20         N29785 0 1.8Vdc
+M_M27         N30207 N29781 N30211 N30211 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M28         N30207 N29781 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V21         N30211 0 1.8Vdc
+M_M29         N30207 CLKBAR N29597 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M30         N29597 CLK N30207 N30924 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M35         OUTQBAR OUTQ N32132 N32132 MbreakP  
++ L=.18u  
++ W=1.8u         
+V_V24         N32008 0 1.8Vdc
+M_M36         OUTQBAR OUTQ 0 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+V_V25         N32132 0 1.8Vdc
+M_M33         OUTQ N31884 N32008 N32008 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M34         OUTQ N31884 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M37         N31884 CLKBAR N29781 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M38         N29781 CLK N31884 N32950 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M39         N31884 CLK OUTQBAR 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M40         OUTQBAR CLKBAR N31884 N33411 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M41         CLKBAR CLK N33959 N33959 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V28         N33959 0 1.8Vdc
+M_M42         CLKBAR CLK 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V29         CLK 0  
++PULSE 0 1.8V 0 1n 1n 2u 4u
+V_V30         N29585 0  
++PULSE 0 1.8V 0 1n 1n 3u 6u
+C_C4         0 OUTQ  20p  TC=0,0 
+C_C5         0 Q  20p  TC=0,0 
+V_V27         N33411 0 1.8Vdc
+V_V22         N30924 0 1.8Vdc
+V_V19         N29629 0 1.8Vdc
+V_V26         N32950 0 1.8Vdc
+C_C6         0 OUTPUT  20p  TC=0,0 
+V_V31         N51297 0 1.8Vdc
+V_V35         N51465 0  
++PULSE 1.8V 0V 0 1n 1n 3u 6u
+M_M48         N51519 N51251 OUTPUT 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M46         N51465 N51311 OUTPUT 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V36         N51519 0  
++PULSE 1.8V 0V 0 1n 1n 2u 4u
+M_M44         N51311 N51251 N512671 N51297 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M43         N51311 N51251 N51315 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M45         OUTPUT N51251 N51465 N51767 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V32         N51251 0  
++PULSE 1.8V 0 0 1n 1n 1u 2u
+V_V34         N51825 0 1.8Vdc
+M_M47         OUTPUT N51311 N51519 N51825 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V33         N51767 0 1.8Vdc
+M_M49         N512671 S N51297 N51297 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M50         N51315 SBAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M51         SBAR S N52609 N52609 MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M52         SBAR S 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V37         N52609 0 1.8Vdc
+V_V38         S 0  
++PULSE 1.8V 0 0 1n 1n 2u 4u
+V_V41         N57003 0 1.8Vdc
+M_M56         ABAR A 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M55         ABAR A N57003 N57003 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V43         N57508 0 1.8Vdc
+V_V44         B 0  
++PULSE 0 1.8V 0 1n 1n 2u 4u
+M_M58         BBAR B 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M57         BBAR B N57508 N57508 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M60         D0 A 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M59         N58469 A N58038 N58038 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V45         N58038 0 1.8Vdc
+M_M61         D0 B N58469 N58038 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V46         A 0  
++PULSE 0 1.8V 2u 1n 1n 4u 8u
+M_M62         D0 B 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M63         N59925 ABAR N59807 N59807 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M64         D2 ABAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V47         N59807 0 1.8Vdc
+M_M66         D2 B 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M65         D2 B N59925 N59807 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V49         N61229 0 1.8Vdc
+M_M74         D1 BBAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M73         D1 BBAR N61347 N61229 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M71         N61347 A N61229 N61229 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M72         D1 A 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M77         D3 BBAR N62080 N61962 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M76         D3 ABAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M75         N62080 ABAR N61962 N61962 MbreakP  
++ L=.18u  
++ W=.72u         
+V_V50         N61962 0 1.8Vdc
+M_M78         D3 BBAR 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+C_C7         0 D0  20p  TC=0,0 
+C_C8         0 D3  20p  TC=0,0 
+C_C9         0 D2  20p  TC=0,0 
+C_C10         0 D1  20p  TC=0,0 
+C_C11         0 QQ  20p  TC=0,0 
+V_V57         N89593 0  
++PULSE 0 1.8V 0u 1n 1n 3u 6u
+M_M89         QQ N88383 N89207 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V51         N88499 0 1.8Vdc
+M_M79         N90049 N88453 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M88         N89191 N88383 N88453 N89303 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M90         N89207 N88383 N89191 N89223 MbreakP  
++ L=.18u  
++ W=.72u         
+M_M80         N89857 N88453 N88499 N88499 Mbreakp  
++ L=.18u  
++ W=.36u         
+V_V58         N88383 0  
++PULSE 0 1.8V 0u 1n 1n 2u 4u
+V_V56         N89303 0 1.8Vdc
+M_M87         N88453 N88383 N89593 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V55         N89223 0 1.8Vdc
+M_M91         N89885 N88453 N89857 N88499 Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M92         N89885 N88453 N90049 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M94         N91041 N89885 N90919 N90919 Mbreakp  
++ L=.18u  
++ W=.36u         
+V_V59         N90919 0 1.8Vdc
+M_M95         N89191 N89885 N91041 N90919 Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M96         N89191 N89885 N91095 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M93         N91095 N89885 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+V_V60         N91824 0 1.8Vdc
+M_M98         N91946 N89207 N91824 N91824 Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M97         N92000 N89207 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M99         QQBAR N89207 N91946 N91824 Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M100         QQBAR N89207 N92000 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M101         N92956 QQBAR 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+V_V61         N92780 0 1.8Vdc
+M_M104         QQ QQBAR N92956 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M102         N92902 QQBAR N92780 N92780 Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M103         QQ QQBAR N92902 N92780 Mbreakp  
++ L=.18u  
++ W=.36u         
