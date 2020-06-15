@@ -54,6 +54,12 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 
 9. Simulation window open, Trace -> Add trace -> select required current or voltage -> ok.
+
+
+![image](https://user-images.githubusercontent.com/66687579/84695058-dd72c500-af67-11ea-9a65-0fd91d1812c0.png)
+![image](https://user-images.githubusercontent.com/66687579/84695125-fa0efd00-af67-11ea-9aa5-6952cae39cb3.png)
+![image](https://user-images.githubusercontent.com/66687579/84695148-02ffce80-af68-11ea-822c-019f9e4010ea.png)
+
 10. You get output on simulation window.
 
 #### Calculation of power in PSPICE:
