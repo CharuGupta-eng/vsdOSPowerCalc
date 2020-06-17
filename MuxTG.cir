@@ -1,0 +1,29 @@
+* source MUX_TG
+M_M8         OUTPUTTG N22714 N22922 N23228 MbreakP  
++ L=.18u  
++ W=.72u         
+C_C2         0 OUTPUTTG  20p  TC=0,0 
+M_M5         N22714 N22654 N22696 N22696 Mbreakp  
++ L=.18u  
++ W=1.8u         
+M_M4         N22714 N22654 0 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+V_V7         N23170 0 1.8Vdc
+V_V9         N23228 0 1.8Vdc
+V_V6         N22654 0  
++PULSE 1.8V 0 0 1n 1n 1u 2u
+M_M7         N22868 N22714 OUTPUTTG 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V10         N22868 0  
++PULSE 1.8V 0V 0 1n 1n 3u 6u
+V_V11         N22922 0  
++PULSE 1.8V 0V 0 1n 1n 2u 4u
+M_M9         N22922 N22654 OUTPUTTG 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V5         N22696 0 1.8Vdc
+M_M6         OUTPUTTG N22654 N22868 N23170 MbreakP  
++ L=.18u  
++ W=.72u     H     T     \     d     l     é          ∞      C U R R I C U L U M     V I T A E               L I P I   B A N E R J E E               N o r m a l          	   i r i s 4 0 2 +         8         @   ÄÓì¶   @    Z„+·Ò–@   Ä¢´Ëî—         ≠     ê	        W P S   O f f i c e                                                                                                                                                                                                                                                                                                                                        

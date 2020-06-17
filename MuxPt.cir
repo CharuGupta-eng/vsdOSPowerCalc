@@ -1,0 +1,15 @@
+* source NET_MUX_2T
+V_V1         N15937 0  
++PULSE 1.8V 0 0 1n 1n 3u 6u
+V_V2         N15917 0  
++PULSE 1.8V 0V 0 1n 1n 1u 2u
+M_M1         OUT N15917 N15941 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+M_M3         N15937 N15917 OUT N15963 Mbreakp  
++ L=.18u  
++ W=.72u         
+V_V4         N15963 0 1.8Vdc
+V_V3         N15941 0  
++PULSE 1.8V 0V 0 1n 1n 2u 4u
+C_C1         0 OUT  20p  TC=0,0   H     T     \     d     l     é          ∞      C U R R I C U L U M     V I T A E               L I P I   B A N E R J E E               N o r m a l          	   i r i s 4 0 2 +         8         @   ÄÓì¶   @    Z„+·Ò–@   Ä¢´Ëî—         ≠     ê	        W P S   O f f i c e                                                                                                                                                                                                                                                                                                                                        
