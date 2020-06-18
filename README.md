@@ -138,7 +138,7 @@ winecfg
 ps axf | grep -i 'sim'
 sudo killall SIMSRVR.EXE
 
-###### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
+####### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
 I. D FF using PT
 
