@@ -12,16 +12,15 @@ M_M3         A SEL OUT N15963 Mbreakp
 V_V4         N15963 0 1.8Vdc
 V_V3         B 0  
 +PULSE 1.8V 0V 0 1n 1n 2u 4u
-C_C1         0 OUT  20p  
+C_C1         0 OUT  20p     
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
 .tran 2e-0 20e-6 2e-6
 .control
 run 
+PLOT V(OUT)
+PLOT V(SEL)
 PLOT V(A)
 PLOT V(B)
-PLOT V(SEL)
-PLOT V(OUT)
-
 .endc
-.end    H     T     \     d     l     é          ∞      C U R R I C U L U M     V I T A E               L I P I   B A N E R J E E               N o r m a l          	   i r i s 4 0 2 +         8         @   ÄÓì¶   @    Z„+·Ò–@   Ä¢´Ëî—         ≠     ê	        W P S   O f f i c e                                                                                                                                                                                                                                                                                                                                        
+.end  

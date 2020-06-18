@@ -2,7 +2,7 @@
 M_M8         OUTPUTTG N22714 B N23228 MbreakP  
 + L=.18u  
 + W=.72u         
-C_C2         0 OUTPUTTG  20p   
+C_C2         0 OUTPUTTG  20p  
 M_M5         N22714 SEL N22696 N22696 Mbreakp  
 + L=.18u  
 + W=1.8u         
@@ -27,15 +27,14 @@ V_V5         N22696 0 1.8Vdc
 M_M6         OUTPUTTG SEL A N23170 MbreakP  
 + L=.18u  
 + W=.72u         
- 
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
 .tran 2e-0 20e-6 2e-6
 .control
-run
-plot V(A)
-plot V(B)
-plot V(SEL)
-plot V(OUTPUTTG) 
+run 
+PLOT V(OUTPUTTG)
+PLOT V(SEL)
+PLOT V(A)
+PLOT V(B)
 .endc
-.end     H     T     \     d     l     é          ∞      C U R R I C U L U M     V I T A E               L I P I   B A N E R J E E               N o r m a l          	   i r i s 4 0 2 +         8         @   ÄÓì¶   @    Z„+·Ò–@   Ä¢´Ëî—         ≠     ê	        W P S   O f f i c e                                                                                                                                                                                                                                                                                                                                        
+.end  
