@@ -82,7 +82,63 @@ First install PSPICE from any available site. After installation of PSPICE follo
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
-##### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
+
+##### Installation and simulation on LINUX
+
+Note: use ** for comment
+
+** uninstall and clean up wine completely:
+
+sudo apt-get remove --purge wine winetricks    # not enough, needs also:
+sudo apt-get remove --purge wine1.2            
+sudo apt-get autoremove --purge             # for wine1.2-gecko etc
+ls -d /home/administrator/.wine*  # shows: .wine/ .winetrickscache/
+rm -rf ~/.wine*
+
+** install wine 
+sudo apt-get install wine # installs winetricks, wine1.2-gecko
+
+** run wineconfig, and set win 98 mode
+winecfg 
+
+** run winetricks and install dependencies
+** note: mfc42=vcrun6
+winetricks corefonts dcom98 mfc42
+
+
+** run wineconfig again, and under 
+** 'Libraries', set rpcrt4 to "built-in" - NOT 'native';
+** else installer will crash @ 'Call from 0x7b836852 to unimplemented function rpcrt4.dll.I_RpcExceptionFilter, aborting'
+winecfg 
+
+** now run the Pspice installer
+** install Pspice in a dir without spaces; 
+** for example /home/user/Orcad_Demo
+** that will be Z:\\home\\user\\Orcad_Demo for wine
+cd ps9_1/
+wine Setup.exe
+
+** Install should be done now, 
+** programs start
+
+** check whether dll's have been registered in wine registry:
+grep 'ipspice' ~/.wine/*.reg
+grep 'sim' ~/.wine/*.reg
+grep 'pspi' ~/.wine/*.reg
+
+** check if PSPICEEV.INI is installed
+$ ls ~/.wine/drive_c/windows/
+
+** run wineconfig YET again, and under 
+** 'Libraries', set ole32, oleaut32, rpcrt4 to "built-in" - NOT 'native';
+winecfg 
+
+** check if by any chance multiple copies of SIMSRVR.EXE have been started;
+** if so kill them
+ps axf | grep -i 'sim'
+sudo killall SIMSRVR.EXE
+
+###### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
 I. D FF using PT
 
