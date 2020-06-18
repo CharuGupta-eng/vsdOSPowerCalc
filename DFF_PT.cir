@@ -1,7 +1,7 @@
 * source NET_DFF_PT
 V_V15         N41509 0 1.8Vdc
 V_V16         N41589 0 1.8Vdc
-V_V17         N41879 0  
+V_V17         DIN 0  
 +PULSE 0 1.8V 0u 1n 1n 3u 6u
 M_M13         N40957 N40799 N40939 N40939 MbreakP  
 + L=.18u  
@@ -12,7 +12,7 @@ M_M14         QBAR N41061 0 0 MbreakN
 M_M10         N40799 N40739 0 0 Mbreakn  
 + L=.18u  
 + W=.72u         
-M_M18         N40739 N40669 N41879 0 MbreakN  
+M_M18         N40739 CLK DIN 0 MbreakN  
 + L=.18u  
 + W=.72u         
 V_V8         N41253 0 1.8Vdc
@@ -22,27 +22,37 @@ M_M16         Q QBAR 0 0 MbreakN
 M_M15         QBAR N41061 N41103 N41103 MbreakP  
 + L=.18u  
 + W=.72u         
-M_M19         N40957 N40669 N40739 N41589 MbreakP  
+M_M19         N40957 CLK N40739 N41589 MbreakP  
 + L=.18u  
 + W=.72u         
 M_M12         N40957 N40799 0 0 MbreakN  
 + L=.18u  
 + W=.72u         
 V_V13         N40939 0 1.8Vdc
-M_M20         Q N40669 N41061 0 MbreakN  
+M_M20         Q CLK N41061 0 MbreakN  
 + L=.18u  
 + W=.72u         
 M_M17         Q QBAR N41253 N41253 MbreakP  
 + L=.18u  
 + W=.72u         
-C_C5         0 Q  20p  TC=0,0 
+C_C5         0 Q  20p 
 V_V14         N41103 0 1.8Vdc
-V_V18         N40669 0  
+V_V18         CLK 0  
 +PULSE 0 1.8V 0u 1n 1n 2u 4u
 V_V12         N40781 0 1.8Vdc
 M_M11         N40799 N40739 N40781 N40781 Mbreakp  
 + L=.18u  
 + W=.72u         
-M_M21         N41061 N40669 N40957 N41509 MbreakP  
+M_M21         N41061 CLK N40957 N41509 MbreakP  
 + L=.18u  
-+ W=.72u   
++ W=.72u    
+.MODEL MBREAKP PMOS
+.MODEL MBREAKN NMOS  
+.tran 2e-0 20e-6 2e-6
+.control
+run 
+PLOT V(Q)
+PLOT V(CLK)
+PLOT V(DIN)
+.endc
+.end  
