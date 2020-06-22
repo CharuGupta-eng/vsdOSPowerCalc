@@ -344,7 +344,7 @@ VIi. MUX using TG
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84527691-f5dea780-acfb-11ea-82cc-e35407ed5008.png)
+![image](https://user-images.githubusercontent.com/66687579/85321568-7b274080-b4e2-11ea-82a7-4c9e2595f4d7.png)
                                        
                                        
                                        
