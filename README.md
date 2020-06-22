@@ -192,7 +192,7 @@ II. D FF using TG
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84523098-5dddbf80-acf5-11ea-86d5-789cc9c1483a.png)
+![image](https://user-images.githubusercontent.com/66687579/85319522-44036000-b4df-11ea-9431-de8df45f2ee0.png)
                                            
                                            
                                            
