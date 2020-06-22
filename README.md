@@ -276,7 +276,7 @@ V. Line decoder using alternate DVL and TG
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84528838-05f78680-acfe-11ea-9576-8b2ee2568358.png)
+![image](https://user-images.githubusercontent.com/66687579/85320623-fa1b7980-b4e0-11ea-8339-2cab5a689901.png)
 
 
 
