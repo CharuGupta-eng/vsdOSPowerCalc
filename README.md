@@ -254,7 +254,7 @@ IV. Line decoder using CMOS LOGIC
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84528721-d21c6100-acfd-11ea-8db2-9f70799740a7.png)
+![image](https://user-images.githubusercontent.com/66687579/85320349-8f6a3e00-b4e0-11ea-85b9-ddd5747aa46a.png)
 
 
 
