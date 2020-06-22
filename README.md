@@ -223,7 +223,8 @@ III. D FF using stack transistor
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84524751-173d9480-acf8-11ea-9a9b-e7d4446463ab.png)
+
+![image](https://user-images.githubusercontent.com/66687579/85320016-14a12300-b4e0-11ea-86bc-96da5e7eb8c6.png)
 
 
 
