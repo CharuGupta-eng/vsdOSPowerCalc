@@ -308,7 +308,9 @@ VI. MUX using PT
 
 
 
-![](https://user-images.githubusercontent.com/66687579/84527761-1eff3800-acfc-11ea-8746-c639000a1c20.png)
+![image](https://user-images.githubusercontent.com/66687579/85321127-d147b400-b4e1-11ea-8d2f-a4d0cfc32a0b.png)
+
+
                                          
                                          
                                          
