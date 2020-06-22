@@ -156,7 +156,7 @@ I. D FF using PT
 
 
                                             Input Output Waveform
-![](https://user-images.githubusercontent.com/66687579/84521659-f9216580-acf2-11ea-91dc-53fd729331e7.png)
+![image](https://user-images.githubusercontent.com/66687579/85319276-e96a0400-b4de-11ea-8e50-52cf62fff3a6.png)
 
 
 
