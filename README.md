@@ -28,13 +28,23 @@ Ngspice is an open source mixed signal circuit simulator.
  
  To simulate a netlist, type:
  
- ngspice 1-> source <filename.cir>
+ ngspice 1-> source <filename>.cir
  
  You can exit from ngspice Shell by typing:
  
  ngspice 1-> exit
         or
  ngspice 1 -> quit
+
+###### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
+
+1. Run DFF_TG.cir file in Ngspice.
+2. copy the output and save it as .csv file (DFF.csv).
+3. Open Anaconda and launch jupyter notebook.
+4. Upload .csv file (DFF.csv).
+5. Click on NEW -> Python 3. 
+6. Write your script and save it as.py file (DFF_TG_MEANPOWER.py)
+
 
 ### Steps for Simulation on Window
 
