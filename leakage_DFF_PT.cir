@@ -1,6 +1,5 @@
 * source NET_DFF_PT
 V_V17         DIN 0  
-+PULSE 0 1.8V 0u 1n 1n 3u 6u
 M_M13         N40957 N40799 VDD VDD MbreakP  
 + L=.18u  
 + W=.72u         
@@ -33,7 +32,6 @@ M_M17         Q QBAR VDD VDD MbreakP
 + W=.72u         
 C_C5         0 Q  20p 
 V_V18         CLK 0  
-+PULSE 0 1.8V 0u 1n 1n 2u 4u
 M_M11         N40799 N40739 VDD VDD Mbreakp  
 + L=.18u  
 + W=.72u         
@@ -45,7 +43,7 @@ V_V19         N43383 VDD 0Vdc
    
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
-.tran 2e-0 20e-6 0e-6
+.OP
 .control
 run 
 PLOT V(Q)

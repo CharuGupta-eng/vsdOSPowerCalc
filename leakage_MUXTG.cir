@@ -10,14 +10,11 @@ M_M4         N22714 SEL 0 0 Mbreakn
 + L=.18u  
 + W=.72u         
 V_V6         SEL 0  
-+PULSE 1.8V 0 0 1n 1n 1u 2u
 M_M7         A N22714 OUTPUTTG 0 MbreakN  
 + L=.18u  
 + W=.72u         
 V_V10         A 0  
-+PULSE 1.8V 0V 0 1n 1n 3u 6u
 V_V11         B 0  
-+PULSE 1.8V 0V 0 1n 1n 2u 4u
 M_M9         B SEL OUTPUTTG 0 MbreakN  
 + L=.18u  
 + W=.72u         
@@ -25,12 +22,10 @@ M_M6         OUTPUTTG SEL A VDD MbreakP
 + L=.18u  
 + W=.72u         
 V_V5         N24354 0 1.8Vdc
-V_V12         N24354 VDD 0Vdc
-
-        
+V_V12         N24354 VDD 0Vdc      
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
-.tran 2e-0 20e-6 2e-6
+.op
 .control
 run 
 PLOT V(OUTPUTTG)

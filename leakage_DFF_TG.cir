@@ -40,9 +40,7 @@ M_M36         OUTQBAR OUTQ 0 0 Mbreakn
 + L=.18u  
 + W=.72u         
 V_V30         DIN 0  
-+PULSE 0 1.8V 0 1n 1n 3u 6u
 V_V29         CLK 0  
-+PULSE 0 1.8V 0 1n 1n 2u 4u
 M_M40         OUTQBAR CLKBAR N48007 VDD MbreakP  
 + L=.18u  
 + W=.72u         
@@ -63,7 +61,7 @@ V_V31         N51925 VDD 0Vdc
  
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
-.tran 2e-0 20e-6 2e-6
+.op
 .control
 run 
 PLOT V(OUTQ)
