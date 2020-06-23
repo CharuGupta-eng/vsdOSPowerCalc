@@ -36,7 +36,7 @@ Ngspice is an open source mixed signal circuit simulator.
         or
  ngspice 1 -> quit
 
-###### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
+####### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
 
 1. Run DFF_TG.cir file in Ngspice.
 2. copy the output and save it as .csv file (DFF.csv).
