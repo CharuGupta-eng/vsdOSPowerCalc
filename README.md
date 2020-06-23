@@ -9,6 +9,33 @@ For power analysis I simulate D flip flop using pass transistor, transmission ga
 Simulations done on PSPICE which runs under windows, so no need of linux commands.
 For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for NMOS and PMOS transistors.In this project i used TSMC 180nm need to change to OSU018.
 
+### About Ngspice
+Ngspice is an open source mixed signal circuit simulator.
+
+#### Installing Ngspice
+
+##### For Ubuntu
+ Open your terminal and type the following to install Ngspice
+ 
+ $ sudo apt-get install -y ngspice
+ 
+ ###### Running the Simulation
+ Download all files from Ngspice Simulator folder.
+ 
+ To enter the Ngspice Shell, open the terminal and type:
+ 
+ $ ngspice
+ 
+ To simulate a netlist, type:
+ 
+ ngspice 1-> source <filename.cir>
+ 
+ You can exit from ngspice Shell by typing:
+ 
+ ngspice 1-> exit
+        or
+ ngspice 1 -> quit
+
 ### Steps for Simulation on Window
 
 First install PSPICE from any available site. After installation of PSPICE follow following instructions:
