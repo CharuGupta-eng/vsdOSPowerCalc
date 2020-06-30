@@ -205,6 +205,17 @@ I. D FF using PT
 
 
 
+                                       Average Power Calculation from NGSPICE
+
+
+
+![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
+                                       
+                                       
+
+
+
+
                             
 
 
@@ -243,7 +254,7 @@ II. D FF using TG
 
 
 
-                                          Power Calculation from NGSPICE 
+                                         Average Power Calculation from NGSPICE 
                                          
                                           
 ![image](https://user-images.githubusercontent.com/66687579/86125148-cf8d7a00-baf9-11ea-859d-649e08bdcd3b.png)                                          
