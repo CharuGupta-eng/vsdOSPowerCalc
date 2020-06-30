@@ -243,6 +243,15 @@ II. D FF using TG
 
 
 
+                                          Power Calculation from NGSPICE 
+                                         
+                                          
+![image](https://user-images.githubusercontent.com/66687579/86125148-cf8d7a00-baf9-11ea-859d-649e08bdcd3b.png)                                          
+                                         
+
+
+
+
 
 
 
