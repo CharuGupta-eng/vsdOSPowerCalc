@@ -443,6 +443,16 @@ VIi. MUX using TG
 2.             
 
 
+![image](https://user-images.githubusercontent.com/66687579/86263195-8105db80-bbde-11ea-8075-327b4b15595a.png)
+
+
+
+![image](https://user-images.githubusercontent.com/66687579/86263231-90852480-bbde-11ea-84bd-96e2bc5d656a.png)
+
+
+
+![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
+
 
 ######## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
