@@ -433,10 +433,18 @@ VIi. MUX using TG
 
 
 
+####### USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
+
+1. Run POW.py by writing 
+            Python POW.py 
+               or
+            chmod 777 POW.py
+            ./POW.py
+2.             
 
 
 
-###### Contact information.
+######## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
 2. Kunal Ghosh Director, VSD Corp.Pvt. Ltd. kunalpghosh@gmail.com
 3. Philipp Guhring Software Architect at LibreSilicon Association pg@futureware.at
