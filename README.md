@@ -15,6 +15,9 @@ Ngspice is an open source mixed signal circuit simulator.
 #### Installing Ngspice
 
 
+![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
 
