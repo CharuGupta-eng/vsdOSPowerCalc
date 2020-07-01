@@ -15,18 +15,17 @@ Ngspice is an open source mixed signal circuit simulator.
 #### Installing Ngspice
 
 
-![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
 
 
 
 ![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
 
-![image](https://user-images.githubusercontent.com/66687579/86261684-7f3b1880-bbdc-11ea-842a-6c219fcb2101.png)
 
 
-![image](https://user-images.githubusercontent.com/66687579/86261654-75191a00-bbdc-11ea-925d-22cfcb39b304.png)
 
-![image](https://user-images.githubusercontent.com/66687579/86261589-60d51d00-bbdc-11ea-89b1-5a3d9ef9742c.png)
+
+
+
 
 
 
@@ -440,17 +439,53 @@ VIi. MUX using TG
                or
             chmod 777 POW.py
             ./POW.py
-2.             
+2. Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
 
-
+                                               Python scipt First Step
+                                               
 ![image](https://user-images.githubusercontent.com/66687579/86263195-8105db80-bbde-11ea-8075-327b4b15595a.png)
 
 
 
+
+                                        tg.txt file enter by user for changing
+                                              
+![image](https://user-images.githubusercontent.com/66687579/86261654-75191a00-bbdc-11ea-925d-22cfcb39b304.png)
+
+
+
+
+3. Enter all the values ask by python script
+
+
+                                               Python Script
+                                               
 ![image](https://user-images.githubusercontent.com/66687579/86263231-90852480-bbde-11ea-84bd-96e2bc5d656a.png)
 
 
+                                         Showing Time Period In Schematic
+                                         
+![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
 
+
+                                  Showing Voltage Value and Voltage name in Schematic 
+                                  
+![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
+
+                                         Showing Voltage name in ngspice netlist
+                                         
+                                         
+![image](https://user-images.githubusercontent.com/66687579/86261684-7f3b1880-bbdc-11ea-842a-6c219fcb2101.png)
+
+
+
+4.Finally your tg.txt have required line from which you get average power plot and no. of values at different time after running in .cir form.
+                                         
+                                         
+                                          Modified netlist in tg.txt
+
+
+                                         Average power plot on ngspice
 ![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
 
 
