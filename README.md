@@ -14,21 +14,6 @@ Ngspice is an open source mixed signal circuit simulator.
 
 #### Installing Ngspice
 
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
-
-
-
-
-
-
-
-
-
-
 ##### For Ubuntu
  Open your terminal and type the following to install Ngspice
  
@@ -436,9 +421,10 @@ VIi. MUX using TG
 
 1. Run POW.py by writing 
             Python POW.py 
-               or
-            chmod 777 POW.py
-            ./POW.py
+                or 
+           chmod 777 POW.py
+           
+           ./POW.py
 2. Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
 
                                                Python scipt First Step
@@ -465,7 +451,7 @@ VIi. MUX using TG
 
                                          Showing Time Period In Schematic
                                          
-![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
+![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
 
 
                                   Showing Voltage Value and Voltage name in Schematic 
@@ -483,6 +469,9 @@ VIi. MUX using TG
                                          
                                          
                                           Modified netlist in tg.txt
+                                          
+                                          
+![image](https://user-images.githubusercontent.com/66687579/86344728-3cc71980-bc78-11ea-8c15-e4c281a3dc1e.png)                                          
 
 
                                          Average power plot on ngspice
