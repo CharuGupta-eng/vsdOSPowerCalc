@@ -498,7 +498,15 @@ VIi. MUX using TG
 
                                     Python scipt 
 ![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)
-
+### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+1. Run script by writing python leakage.py
+2.  Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script.
+                                                    Python script
+                                                    
+                                                    
+                                               values to be entered by you shown on schematic
+                                                    
+                                               values to be entered by you shown on schematic
 
 ## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
