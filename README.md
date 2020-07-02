@@ -36,7 +36,7 @@ Ngspice is an open source mixed signal circuit simulator.
         or
  ngspice 1 -> quit
 
-###### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
+####### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
 
 1. Run DFF_TG.cir file in Ngspice.
 2. copy the output and save it as .csv file (DFF.csv).
@@ -46,7 +46,7 @@ Ngspice is an open source mixed signal circuit simulator.
 6. Write your script and save it as.py file (DFF_TG_MEANPOWER.py)
 
 
-### Steps for Simulation on Window
+######## Steps for Simulation on Window
 
 First install PSPICE from any available site. After installation of PSPICE follow following instructions:
 1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
@@ -115,12 +115,12 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 
 
-#### Calculation of power in PSPICE:
+######### Calculation of power in PSPICE:
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
 
-##### Installation and simulation on LINUX
+########## Installation and simulation on LINUX
 
 Note: use ** for comment
 
@@ -175,7 +175,7 @@ winecfg
 ps axf | grep -i 'sim'
 sudo killall SIMSRVR.EXE
 
-###### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
+########### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
 I. D FF using PT
 
@@ -417,13 +417,12 @@ VIi. MUX using TG
 
 
 
-####### USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
+############ USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
 
 1. Run POW.py by writing 
             Python POW.py 
                 or 
            chmod 777 POW.py
-           
            ./POW.py
 2. Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
 
@@ -453,9 +452,8 @@ VIi. MUX using TG
                                          
 ![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
 
-
                                   Showing Voltage Value and Voltage name in Schematic 
-                                  
+               
 ![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
 
                                          Showing Voltage name in ngspice netlist
@@ -477,6 +475,18 @@ VIi. MUX using TG
                                          Average power plot on ngspice
 ![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
 
+5. Similarly you got for your cicuit I am showing you some average power curve which i got following these steps
+
+                                              INVETRER
+                                              
+                                              
+                                              1BIT ADDER
+                                              
+                                              
+                                              DFF using PT
+                                              
+                                              
+                                        Inverter design By my friend
 
 ######## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
