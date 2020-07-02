@@ -503,8 +503,13 @@ VIi. MUX using TG
 2.  Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script.
                                                     Python script
                                                     
+ 
+![image](https://user-images.githubusercontent.com/66687579/86357932-3e9ad800-bc8c-11ea-9260-edbfd8329b3b.png)
+
+                                                   
                                                     
                                                values to be entered by you shown on schematic
+                                               
                                                     
                                                values to be entered by you shown on schematic
 
