@@ -451,9 +451,7 @@ VIi. MUX using TG
                                          Showing Time Period In Schematic
                                          
 ![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
-
-                                  Showing Voltage Value and Voltage name in Schematic 
-               
+                                 Showing Voltage Value and Voltage name in Schematic
 ![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
 
                                          Showing Voltage name in ngspice netlist
@@ -492,9 +490,16 @@ VIi. MUX using TG
  ![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
  
                                         Inverter design By my friend
- ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)                                         
+ ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)  
+ 
+### Steps to find one value of average power by runing avg.py python file
 
-######## Contact information.
+1. Run by writing python avg.py
+2. Follow steps instructed by script you will get.
+
+                                    Python scipt 
+
+## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
 2. Kunal Ghosh Director, VSD Corp.Pvt. Ltd. kunalpghosh@gmail.com
 3. Philipp Guhring Software Architect at LibreSilicon Association pg@futureware.at
