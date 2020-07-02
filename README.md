@@ -424,7 +424,7 @@ VIi. MUX using TG
                 or 
            chmod 777 POW.py
            ./POW.py
-2. Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
+2. Following window open in which you have to enter .txt file name as I enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
 
                                                Python scipt First Step
                                                
@@ -500,7 +500,7 @@ VIi. MUX using TG
 ![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)
 ### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing python leakage.py
-2.  Following window open in which you have to enter tg.txt file of DFF using transmission gate after removing lines instructed by python script.
+2.  Following window open in which you have to enter .txt file name as I enter tg_leakage.txt file of DFF using transmission gate after removing lines instructed by python script.
                                                     Python script
                                                     
  
