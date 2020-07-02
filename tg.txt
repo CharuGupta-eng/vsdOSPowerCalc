@@ -1,0 +1,68 @@
+* source NET_DFF_TG
+M_M38         N47473 CLK N48007 VDD MbreakP  
++ L=.18u  
++ W=.72u         
+M_M27         N47627 N47473 VDD VDD MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M35         OUTQBAR OUTQ VDD VDD MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M25         N47473 N47351 VDD VDD MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M28         N47627 N47473 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M37         N48007 CLKBAR N47473 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M34         OUTQ N48007 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+C_C4         0 OUTQ  20p 
+M_M23         DIN CLK N47351 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+M_M26         N47473 N47351 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M41         CLKBAR CLK VDD VDD MbreakP  
++ L=.18u  
++ W=.72u         
+M_M39         N48007 CLK OUTQBAR 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M42         CLKBAR CLK 0 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M36         OUTQBAR OUTQ 0 0 Mbreakn  
++ L=.18u  
++ W=.72u         
+V_V30         DIN 0  
++PULSE 0 1.8V 0 1n 1n 3u 6u
+V_V29         CLK 0  
++PULSE 0 1.8V 0 1n 1n 2u 4u
+M_M40         OUTQBAR CLKBAR N48007 VDD MbreakP  
++ L=.18u  
++ W=.72u         
+M_M30         N47351 CLK N47627 VDD MbreakP  
++ L=.18u  
++ W=.72u         
+M_M24         N47351 CLKBAR DIN VDD Mbreakp  
++ L=.18u  
++ W=.72u         
+M_M33         OUTQ N48007 VDD VDD MbreakP  
++ L=.18u  
++ W=1.8u         
+M_M29         N47627 CLKBAR N47351 0 MbreakN  
++ L=.18u  
++ W=.72u         
+V_V20         N51925 0 1.8Vdc
+V_V31         N51925 VDD 0Vdc
+F1 0 5 V_V31 0.0045
+C1 5 0 10n
+R1 5 0 100K
+ 
+.MODEL MBREAKP PMOS
+.MODEL MBREAKN NMOS 
