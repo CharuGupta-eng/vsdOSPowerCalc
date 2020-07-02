@@ -36,7 +36,7 @@ Ngspice is an open source mixed signal circuit simulator.
         or
  ngspice 1 -> quit
 
-####### Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
+# Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
 
 1. Run DFF_TG.cir file in Ngspice.
 2. copy the output and save it as .csv file (DFF.csv).
@@ -46,7 +46,7 @@ Ngspice is an open source mixed signal circuit simulator.
 6. Write your script and save it as.py file (DFF_TG_MEANPOWER.py)
 
 
-######## Steps for Simulation on Window
+## Steps for Simulation on Window
 
 First install PSPICE from any available site. After installation of PSPICE follow following instructions:
 1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
@@ -115,12 +115,12 @@ First install PSPICE from any available site. After installation of PSPICE follo
 
 
 
-######### Calculation of power in PSPICE:
+### Calculation of power in PSPICE:
 1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
 2. Power dissipation in uW is obtained.
 
 
-########## Installation and simulation on LINUX
+#### Installation and simulation on LINUX
 
 Note: use ** for comment
 
@@ -175,7 +175,7 @@ winecfg
 ps axf | grep -i 'sim'
 sudo killall SIMSRVR.EXE
 
-########### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
+### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
 I. D FF using PT
 
@@ -417,7 +417,7 @@ VIi. MUX using TG
 
 
 
-############ USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
+## USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
 
 1. Run POW.py by writing 
             Python POW.py 
@@ -479,14 +479,20 @@ VIi. MUX using TG
 
                                               INVETRER
                                               
-                                              
+     
+![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
+
+                                         
                                               1BIT ADDER
-                                              
+![image](https://user-images.githubusercontent.com/66687579/86346734-f9ba7580-bc7a-11ea-974b-9e68d0136e87.png)
+                                            
                                               
                                               DFF using PT
                                               
-                                              
+ ![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
+ 
                                         Inverter design By my friend
+ ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)                                         
 
 ######## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
