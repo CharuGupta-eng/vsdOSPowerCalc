@@ -448,10 +448,9 @@ VIi. MUX using TG
 ![image](https://user-images.githubusercontent.com/66687579/86263231-90852480-bbde-11ea-84bd-96e2bc5d656a.png)
 
 
-                                         Showing Time Period In Schematic
-                                         
+                                         Showing Time Period In Schematic  
 ![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)
-                                 Showing Voltage Value and Voltage name in Schematic
+                                     Showing Voltage Value and Voltage name in Schematic
 ![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
 
                                          Showing Voltage name in ngspice netlist
@@ -498,6 +497,8 @@ VIi. MUX using TG
 2. Follow steps instructed by script you will get.
 
                                     Python scipt 
+![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)
+
 
 ## Contact information.
 1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
