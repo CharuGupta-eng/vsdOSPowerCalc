@@ -36,16 +36,6 @@ Ngspice is an open source mixed signal circuit simulator.
         or
  ngspice 1 -> quit
 
-# Steps to run local files to get Average Power from Python code  (D Flip Flop using TG)
-
-1. Run DFF_TG.cir file in Ngspice.
-2. copy the output and save it as .csv file (DFF.csv).
-3. Open Anaconda and launch jupyter notebook.
-4. Upload .csv file (DFF.csv).
-5. Click on NEW -> Python 3. 
-6. Write your script and save it as.py file (DFF_TG_MEANPOWER.py)
-
-
 ## Steps for Simulation on Window
 
 First install PSPICE from any available site. After installation of PSPICE follow following instructions:
@@ -422,8 +412,13 @@ VIi. MUX using TG
 1. Run POW.py by writing 
             Python POW.py 
                 or 
+           
            chmod 777 POW.py
            ./POW.py
+              or
+          
+          Python3 POW.py
+ Depending on your system.          
 2. Following window open in which you have to enter .txt file name as I enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.    
 
                                                Python scipt First Step
@@ -495,13 +490,31 @@ VIi. MUX using TG
  
 ### Steps to find one value of average power by runing avg.py python file
 
-1. Run by writing python avg.py
+1. Run by writing 
+           
+           python avg.py 
+                or 
+           
+           chmod 777 avg.py
+           ./avg.py
+              or
+          
+          Python3 avg.py
 2. Follow steps instructed by script you will get.
 
                                     Python scipt 
 ![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)
 ### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
-1. Run script by writing python leakage.py
+1. Run script by writing
+            
+            python leakage.py 
+                or 
+           
+           chmod 777 leakage.py
+           ./leakage.py
+              or
+          
+          Python3 leakage.py
 2.  Following window open in which you have to enter .txt file name as I enter tg_leakage.txt file of DFF using transmission gate after removing lines instructed by python script.
                                                     Python script
                                                     
