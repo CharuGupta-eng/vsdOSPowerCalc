@@ -410,7 +410,8 @@ VIi. MUX using TG
 ## USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
 
 1. Run POW.py by writing 
-            Python POW.py 
+           
+           Python POW.py 
                 or 
            
            chmod 777 POW.py
