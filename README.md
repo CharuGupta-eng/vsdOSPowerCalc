@@ -449,7 +449,7 @@ VIi. MUX using TG
 
 
                                          Showing Time Period In Schematic 
-![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png)                                         
+![image](https://user-images.githubusercontent.com/66687579/86246780-2ada6d80-bbc9-11ea-8d84-0580749a4e16.png) #                                         
                                   
                                   Showing Voltage Value and Voltage name in Schematic
 
