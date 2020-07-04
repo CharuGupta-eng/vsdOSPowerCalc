@@ -450,6 +450,7 @@ VIi. MUX using TG
 
                                          Showing Time Period In Schematic                                         
 ![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
+                                  
                                   Showing Voltage Value and Voltage name in Schematic
 
 ![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
@@ -510,10 +511,8 @@ VIi. MUX using TG
                                                    
                                                     
                                                values to be entered by you shown on schematic
+![image](https://user-images.githubusercontent.com/66687579/86511957-4b9a0180-be1b-11ea-9362-85dc304c2667.png)
 
-![image](https://user-images.githubusercontent.com/66687579/86358129-90dbf900-bc8c-11ea-8a81-8ff4f4bd1d00.png)
-
-            
                                                values to be entered by you shown in netlist
 
 ![image](https://user-images.githubusercontent.com/66687579/86358056-7144d080-bc8c-11ea-9394-50170f0c2e82.png)
@@ -524,7 +523,7 @@ VIi. MUX using TG
 
 
 ## Contact information.
-1. Charu Gupta M.tech VLSI Design and EMbedded Systems DTU,Delhi charugupta2511@gmail.com
+1. Charu Gupta M.tech VLSI Design and Embedded Systems DTU,Delhi charugupta2511@gmail.com
 2. Kunal Ghosh Director, VSD Corp.Pvt. Ltd. kunalpghosh@gmail.com
 3. Philipp Guhring Software Architect at LibreSilicon Association pg@futureware.at
 4. Dr. Gaurav Trivedi Co Principle Investigator, EICT Academy, and Associative Professor IEEE department IIT Guwahati trivedi@iitg.ac.in
