@@ -11,7 +11,7 @@ if R*C< T:
     R = float(input("enter value of resistor in Kohm"))
 VDD = float(input("enter value of Supply Voltage in V"))
 BETA = (VDD*C)/(T*(10**9))
-Vtstp = (input("enter name of voltage source having 0V that you placed between Supply Voltage and pmos\n\n\n\n\n"))
+Vtstp = (input("enter name of voltage source having 0V that you placed between Supply Voltage and pmos\n\n"))
 shakes = open(s, "a")
 shakes.write ("\nfp 0 POWR {} {}\n" .format(Vtstp, BETA))
 shakes.write("C1 POWR 0 {}n\n".format(C))
