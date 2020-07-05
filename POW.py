@@ -1,5 +1,5 @@
-print("convert your netlist file to .txt format from .cir file and remove analysis and .control, run, end, endc statemant\n")
-s= (input("enter file name with .txt"))
+print("You have to remove some lines from netlist file that lines are remove analysis (.tran or .dc) and .control, run, end, endc statemant\n")
+s= (input("enter file name with .cir or .txt"))
 C = 10
 R = 100
 T = float(input("Enter the time period in seconds of clock in synchronous circuit or in asynchronous circuit take time period of input having minimum time period"))
@@ -13,10 +13,10 @@ VDD = float(input("enter value of Supply Voltage in V"))
 BETA = (VDD*C)/(T*(10**9))
 Vtstp = (input("enter name of voltage source having 0V that you placed between Supply Voltage and pmos\n\n"))
 shakes = open(s, "a")
-shakes.write ("\nfp 0 POWR {} {}\n" .format(Vtstp, BETA))
+shakes.write("\nfp 0 POWR {} {}\n" .format(Vtstp, BETA))
 shakes.write("C1 POWR 0 {}n\n".format(C))
 shakes.write ("R1 POWR 0 {}K\n".format(R))
 shakes.write(".tran 1e-0 {} UIC\n.control\nrun\nPLOT V(POWR)\nPRINT V(POWR)\n.endc\n.end".format(J))
-print("I made required changes in your file save it again as .cir file and run in ngsice\n\n\n")
+print("I made required changes in your file now you can run in ngsice\n\n\n")
 
 print("You got power curve and values, to find one value run avg.py")
