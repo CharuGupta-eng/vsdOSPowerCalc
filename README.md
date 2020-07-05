@@ -461,7 +461,7 @@ VIi. MUX using TG
 
 4.Finally your tg.txt have required line from which you get average power plot and no. of values at different time after running in .cir form.
 
-   ## if u enter file name with .cir then u get modification in .cir file which name u enter u can directly run it in ngspice
+   ## if you enter file name with .cir then you get modification in .cir file which name you enter you can directly run it in ngspice
                                       
                                          
                                           Modified netlist in tg.txt
@@ -506,8 +506,13 @@ VIi. MUX using TG
           Python3 avg.py
 2. Follow steps instructed by script you will get.
 
-                                    Python scipt 
-![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)
+                                    Python scipt
+                                    
+![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)                                    
+                                    
+                                    tg.csv file
+                                    
+
 ### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
             
@@ -538,7 +543,7 @@ VIi. MUX using TG
 ![image](https://user-images.githubusercontent.com/66687579/86358056-7144d080-bc8c-11ea-9394-50170f0c2e82.png)
 
 3.Run obtained file from script by converting to.cir file and get leakage power on ngspice
-## if u enter file name with .cir then u get modification in .cir file which name u enter u can directly run it in ngspice
+## if you enter file name with .cir then you get modification in .cir file which name you enter you can directly run it in ngspice
 
 ![image](https://user-images.githubusercontent.com/66687579/86358488-2bd4d300-bc8d-11ea-8150-19fee9bfa1ef.png)
 
