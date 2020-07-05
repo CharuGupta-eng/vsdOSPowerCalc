@@ -511,7 +511,7 @@ VIi. MUX using TG
 ![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)                                    
                                     
                                     tg.csv file
-                                    
+![image](https://user-images.githubusercontent.com/66687579/86530450-65e4e580-bed6-11ea-9725-173a9b517ad7.png)                                    
 
 ### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
