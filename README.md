@@ -471,6 +471,7 @@ VIi. MUX using TG
 ![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
                                               
                                               MUX using PT
+![image](https://user-images.githubusercontent.com/66687579/86570741-05b17a80-bf8e-11ea-92a6-a984b6cb7d0a.png)
 
                                          
                                               1BIT ADDER
