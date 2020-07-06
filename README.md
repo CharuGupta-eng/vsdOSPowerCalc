@@ -405,49 +405,7 @@ VIi. MUX using TG
 ![](https://user-images.githubusercontent.com/66687579/84527711-02630000-acfc-11ea-9166-546ba8a8f74b.png)
 
 
-
-
-## USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
-NOTE: ngspice shell and python code are in same folder.
-1. Run POW.py by writing 
-           
-           python POW.py 
-                or 
-           
-           chmod 777 POW.py
-           ./POW.py
-              or
-          
-          python3 POW.py
- Depending on your system.          
-2. Following window open in which you have to enter .txt file name as I enter DFFtg.cir file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.  
-## no need to convert .cir to .txt you can also write file name with extension .cir  
-
-                                               Python scipt First Step
-![image](https://user-images.githubusercontent.com/66687579/86589532-787d1e80-bfab-11ea-983d-7a7dc98ade68.png)                                               
-
-                                        DFFtg.cir file enter by user for changing
-                                              
-![image](https://user-images.githubusercontent.com/66687579/86589625-9fd3eb80-bfab-11ea-98e2-05f2cdd603ee.png)
-                                         
-                                   Showing supply voltage value and node name on schematic
-                                  
-![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
-                                 
-                                   
-
-                                         Showing Time Period In Schematic                                         
-![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
-                                  
-
- 4.Finally you got output waveform and values on ngspice please copy these values and make .csv file with column name as INDEX TIME POWER.
-
-   (I am trying to generate itself from script)                                  
-                                                                               
-                                         Average power plot on ngspice
-![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
-
-5. Similarly you got for your cicuit I am showing you some average power curve which i got following these steps
+ Some average power curve which i got on ngspice steps
 
                                               INVETRER
                                               
@@ -467,47 +425,65 @@ NOTE: ngspice shell and python code are in same folder.
  ![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
  
                                         Inverter design By my friend
- ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)  
- 
-# Steps to find one value of average power by runing avg.py python file
+ ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png) 
+
+# USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
+NOTE: ngspice shell and python code are in same folder.
 NOTE: I am usind panda module so firstly  you have to download  panda
- ## window user
+ ### window user
  In command prompt write
     
     pip install pandas
 
-## linux or ubuntu users
- step 1 : open your terminal (ctrl + Alt + T), then type these command 
+### linux or ubuntu users
+ step 1 : Open your terminal (ctrl + Alt + T), then type these command 
     
     sudo apt-get install python-pip
-Step 2:write this command also 
+Step 2: Write this command also 
         
      sudo python3 -m pip install pandas
 
 step 3: When pip installed, type the command to insatll pandas
     
     pip install pandas
- 
-1. Run by writing 
+
+1. Run POW.py by writing 
            
-           python avg.py 
+           python POW.py 
                 or 
            
-           chmod 777 avg.py
-           ./avg.py
+           chmod 777 POW.py
+           ./POW.py
               or
           
-          python3 avg.py
-2. Follow steps instructed by script you will get.
+          python3 POW.py
+ Depending on your system.          
+2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
+# NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
 
-                                    Python scipt
-                                    
-![image](https://user-images.githubusercontent.com/66687579/86591534-67361100-bfaf-11ea-98d7-59f5ba17d7bf.png)                                   
-                                    
-                                    tg.csv file
-![image](https://user-images.githubusercontent.com/66687579/86530450-65e4e580-bed6-11ea-9725-173a9b517ad7.png)                                    
+                                               Python scipt 
+![image](https://user-images.githubusercontent.com/66687579/86589532-787d1e80-bfab-11ea-983d-7a7dc98ade68.png)                                               
 
-### USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+                                               DFFTG.cir file 
+                                         
+                                   Showing supply voltage value and node name on schematic
+                                  
+![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
+                                 
+                                   
+
+                                         Showing Time Period In Schematic                                         
+![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
+                                  
+
+ 4.Finally you get average power value.
+
+   
+
+                            
+ 
+
+# USE PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
             
             python leakage.py 
