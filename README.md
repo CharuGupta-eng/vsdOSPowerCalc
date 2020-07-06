@@ -420,7 +420,7 @@ VIi. MUX using TG
           
           python3 POW.py
  Depending on your system.          
-2. Following window open in which you have to enter .txt file name as I enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.  
+2. Following window open in which you have to enter .txt file name as I enter DFFtg.cir file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.  
 ## no need to convert .cir to .txt you can also write file name with extension .cir  
 
                                                Python scipt First Step
@@ -493,7 +493,7 @@ NOTE: I am usind panda module so firstly  you have to download  panda
            ./avg.py
               or
           
-          Python3 avg.py
+          python3 avg.py
 2. Follow steps instructed by script you will get.
 
                                     Python scipt
