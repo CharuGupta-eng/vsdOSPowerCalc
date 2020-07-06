@@ -480,8 +480,11 @@ NOTE: I am usind panda module so firstly  you have to download  panda
  step 1 : open your terminal (ctrl + Alt + T), then type these command 
     
     sudo apt-get install python-pip
-Step 2: sudo python3 -m pip install pandas
-step 2: When pip installed, type the command to insatll pandas
+Step 2:write this command also 
+        
+     sudo python3 -m pip install pandas
+
+step 3: When pip installed, type the command to insatll pandas
     
     pip install pandas
  
