@@ -442,7 +442,7 @@ NOTE: ngspice shell and python code are in same folder.
 
  4.Finally you got output waveform and values on ngspice please copy these values and make .csv file with column name as INDEX TIME POWER.
 
-   (I am trying to generate itsself from script)                                  
+   (I am trying to generate itself from script)                                  
                                                                                
                                          Average power plot on ngspice
 ![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
