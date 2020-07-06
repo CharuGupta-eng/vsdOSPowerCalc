@@ -408,7 +408,7 @@ VIi. MUX using TG
 
 
 ## USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
-
+NOTE: ngspice shell and python code are in same folder.
 1. Run POW.py by writing 
            
            python POW.py 
@@ -498,7 +498,7 @@ NOTE: I am usind panda module so firstly  you have to download  panda
 
                                     Python scipt
                                     
-![image](https://user-images.githubusercontent.com/66687579/86348905-f83e7c80-bc7d-11ea-8b9f-7b20b02cfc22.png)                                    
+![image](https://user-images.githubusercontent.com/66687579/86591534-67361100-bfaf-11ea-98d7-59f5ba17d7bf.png)                                   
                                     
                                     tg.csv file
 ![image](https://user-images.githubusercontent.com/66687579/86530450-65e4e580-bed6-11ea-9725-173a9b517ad7.png)                                    
