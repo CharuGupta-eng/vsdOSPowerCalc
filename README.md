@@ -448,18 +448,8 @@ VIi. MUX using TG
                                          Showing Time Period In Schematic                                         
 ![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
                                   
-                                  Showing Voltage Value and Voltage name in Schematic
 
-![image](https://user-images.githubusercontent.com/66687579/86261095-c07ef880-bbdb-11ea-9479-01b6797c0c13.png)
-
-                                         Showing Voltage name in ngspice netlist
-                                         
-                                         
-![image](https://user-images.githubusercontent.com/66687579/86261684-7f3b1880-bbdc-11ea-842a-6c219fcb2101.png)
-
-
-
-4.Finally your tg.txt have required line from which you get average power plot and no. of values at different time after running in .cir form.
+ 4.Finally your tg.txt have required line from which you get average power plot and no. of values at different time after running in .cir form.
 
    ## if you enter file name with .cir then you get modification in .cir file which name you enter you can directly run it in ngspice
                                       
@@ -479,6 +469,8 @@ VIi. MUX using TG
                                               
      
 ![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
+                                              
+                                              MUX using PT
 
                                          
                                               1BIT ADDER
@@ -493,7 +485,20 @@ VIi. MUX using TG
  ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)  
  
 ### Steps to find one value of average power by runing avg.py python file
+NOTE: I am usind panda module so firstly  you have to download  panda
+ # window user
+ In command prompt write
+    
+    pip install pandas
 
+# linux or ubuntu users
+ step 1 : open your terminal (ctrl + Alt + T), then type these command 
+    
+    sudo apt-get install python-pip
+ step 2: Wheb pip installed, type the command to insatll pandas
+    
+    pip install pandas
+ 
 1. Run by writing 
            
            python avg.py 
@@ -535,9 +540,6 @@ VIi. MUX using TG
 
                                                    
                                                     
-                                               values to be entered by you shown on schematic
-![image](https://user-images.githubusercontent.com/66687579/86511957-4b9a0180-be1b-11ea-9362-85dc304c2667.png)
-
                                                values to be entered by you shown in netlist
 
 ![image](https://user-images.githubusercontent.com/66687579/86358056-7144d080-bc8c-11ea-9394-50170f0c2e82.png)
