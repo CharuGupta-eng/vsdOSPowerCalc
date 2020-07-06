@@ -425,7 +425,7 @@ VIi. MUX using TG
 
                                                Python scipt First Step
                                                
-![image](https://user-images.githubusercontent.com/66687579/86263195-8105db80-bbde-11ea-8075-327b4b15595a.png)
+![image](https://user-images.githubusercontent.com/66687579/86584964-4f589000-bfa3-11ea-9ad5-539c2bb0c4dc.png)
 
 
 
@@ -485,14 +485,14 @@ VIi. MUX using TG
                                         Inverter design By my friend
  ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png)  
  
-### Steps to find one value of average power by runing avg.py python file
+# Steps to find one value of average power by runing avg.py python file
 NOTE: I am usind panda module so firstly  you have to download  panda
- # window user
+ ## window user
  In command prompt write
     
     pip install pandas
 
-# linux or ubuntu users
+## linux or ubuntu users
  step 1 : open your terminal (ctrl + Alt + T), then type these command 
     
     sudo apt-get install python-pip
