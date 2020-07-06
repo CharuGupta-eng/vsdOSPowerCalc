@@ -411,55 +411,39 @@ VIi. MUX using TG
 
 1. Run POW.py by writing 
            
-           Python POW.py 
+           python POW.py 
                 or 
            
            chmod 777 POW.py
            ./POW.py
               or
           
-          Python3 POW.py
+          python3 POW.py
  Depending on your system.          
 2. Following window open in which you have to enter .txt file name as I enter tg.txt file of DFF using transmission gate after removing lines instructed by python script as shown in 2nd figure.  
 ## no need to convert .cir to .txt you can also write file name with extension .cir  
 
                                                Python scipt First Step
-                                               
-![image](https://user-images.githubusercontent.com/66687579/86584964-4f589000-bfa3-11ea-9ad5-539c2bb0c4dc.png)
+![image](https://user-images.githubusercontent.com/66687579/86589532-787d1e80-bfab-11ea-983d-7a7dc98ade68.png)                                               
 
-
-
-
-                                        tg.txt file enter by user for changing
+                                        DFFtg.cir file enter by user for changing
                                               
-![image](https://user-images.githubusercontent.com/66687579/86261654-75191a00-bbdc-11ea-925d-22cfcb39b304.png)
-
-
-
-
-3. Enter all the values ask by python script
-
-
-                                               Python Script
-                                               
-![image](https://user-images.githubusercontent.com/66687579/86263231-90852480-bbde-11ea-84bd-96e2bc5d656a.png)
-
+![image](https://user-images.githubusercontent.com/66687579/86589625-9fd3eb80-bfab-11ea-98e2-05f2cdd603ee.png)
+                                         
+                                   Showing supply voltage value and node name on schematic
+                                  
+![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
+                                 
+                                   
 
                                          Showing Time Period In Schematic                                         
 ![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
                                   
 
- 4.Finally your tg.txt have required line from which you get average power plot and no. of values at different time after running in .cir form.
+ 4.Finally you got output waveform and values on ngspice please copy these values and make .csv file with column name as INDEX TIME POWER.
 
-   ## if you enter file name with .cir then you get modification in .cir file which name you enter you can directly run it in ngspice
-                                      
-                                         
-                                          Modified netlist in tg.txt
-                                          
-                                          
-![image](https://user-images.githubusercontent.com/66687579/86344728-3cc71980-bc78-11ea-8c15-e4c281a3dc1e.png)                                          
-
-
+   (I am trying to generate itsself from script)                                  
+                                                                               
                                          Average power plot on ngspice
 ![image](https://user-images.githubusercontent.com/66687579/86263299-ab579900-bbde-11ea-8da3-2397479ae1e4.png)
 
@@ -529,26 +513,21 @@ NOTE: I am usind panda module so firstly  you have to download  panda
            ./leakage.py
               or
           
-          Python3 leakage.py
-2.  Following window open in which you have to enter .txt file name as I enter tg_leakage.txt file of DFF using transmission gate after removing lines instructed by python script.
+          python3 leakage.py
+2.Following window open in which you have to enter .txt file name as I enter tg_leakage.txt file of DFF using transmission gate after removing lines instructed by python script.
 
 ## no need to convert .cir to .txt you can also write file name with extension .cir  
 
                                                     Python script
                                                     
- 
-![image](https://user-images.githubusercontent.com/66687579/86357932-3e9ad800-bc8c-11ea-9260-edbfd8329b3b.png)
+ ![image](https://user-images.githubusercontent.com/66687579/86589743-d9a4f200-bfab-11ea-960f-3b3d55ee9adc.png) 
 
                                                    
                                                     
-                                               values to be entered by you shown in netlist
+                                               
 
-![image](https://user-images.githubusercontent.com/66687579/86358056-7144d080-bc8c-11ea-9394-50170f0c2e82.png)
+3.You get leakage power on ngspice
 
-3.Run obtained file from script by converting to.cir file and get leakage power on ngspice
-## if you enter file name with .cir then you get modification in .cir file which name you enter you can directly run it in ngspice
-
-![image](https://user-images.githubusercontent.com/66687579/86358488-2bd4d300-bc8d-11ea-8150-19fee9bfa1ef.png)
 
 
 ## Contact information.
