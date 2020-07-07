@@ -52,12 +52,13 @@ os.system('ngspice poweranalysis.cir')
 
 file = pd.read_csv('AVPOWER.csv',sep=' ',header=None, names=["0","TIME","1","POWER","2"])
 print(file)
-FILE1 = file[file["TIME"]==T]
+FILE1 = file[file["TIME"]<=T ]
+#print(FILE1)
 FILE2 = file[file["TIME"]==0]
 m = FILE1["POWER"].max()
 n = FILE2["POWER"].max()
 if math.isnan(n):
        n=0
 avg = m-n
-print("m: {} n: {}".format(m,n))
+#print("m: {} n: {}".format(m,n))
 print("AVERAGE POWER IS {}".format(avg))
