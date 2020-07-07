@@ -437,8 +437,13 @@ NOTE: I am usind panda module so firstly  you have to download  panda
 
 ### linux or ubuntu users
  step 1 : Open your terminal (ctrl + Alt + T), then type these command 
+    FOR PYTHON 2
     
     sudo apt-get install python-pip
+   FOR PYTHON 3
+    
+    sudo apt-get install python3-pip
+   
 Step 2: Write this command also 
         
      sudo python3 -m pip install pandas
