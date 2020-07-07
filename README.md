@@ -498,7 +498,7 @@ step 3: When pip installed, type the command to insatll pandas
               or
           
           python3 leakage.py
-2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing lines instructed by python script.  
+2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing non constant voltage sources (pulse) and no needs to remove any other line.  
 
                                                     Python script
                                                     
