@@ -459,12 +459,16 @@ step 3: When pip installed, type the command to insatll pandas
           python3 POW.py
  Depending on your system.          
 2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
-# NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
+### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
 
                                                Python scipt 
-![image](https://user-images.githubusercontent.com/66687579/86589532-787d1e80-bfab-11ea-983d-7a7dc98ade68.png)                                               
+![image](https://user-images.githubusercontent.com/66687579/86670466-494dc800-c012-11ea-8e05-cf1d5ecee6d1.png)
+
+                                              
 
                                                DFFTG.cir file 
+                                               
+ ![image](https://user-images.githubusercontent.com/66687579/86670547-62ef0f80-c012-11ea-97f8-2b481e59f6d5.png)                                              
                                          
                                    Showing supply voltage value and node name on schematic
                                   
@@ -494,9 +498,7 @@ step 3: When pip installed, type the command to insatll pandas
               or
           
           python3 leakage.py
-2.Following window open in which you have to enter .txt file name as I enter tg_leakage.txt file of DFF using transmission gate after removing lines instructed by python script.
-
-## no need to convert .cir to .txt you can also write file name with extension .cir  
+2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing lines instructed by python script.  
 
                                                     Python script
                                                     
