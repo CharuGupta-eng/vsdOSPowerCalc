@@ -58,18 +58,24 @@ M_M33         OUTQ N48007 VDD VDD MbreakP
 M_M29         N47627 CLKBAR N47351 0 MbreakN  
 + L=.18u  
 + W=.72u         
-V_V20         N51925 0 1.8Vdc
-V_V31         N51925 VDD 0Vdc
+V_V20         VDD 0 1.8Vdc
  
 .MODEL MBREAKP PMOS
 .MODEL MBREAKN NMOS  
-.tran 2e-0 20e-6 2e-6
+.tran 1e-0 20e-6 
 .control
-run 
+set filetype=ascii
+set time wr_singlescale
+set pwr wr_V(VDD)* I(V_V31) 
+option numdgt=3
+run
 PLOT V(OUTQ)
+PRINT V(OUTQ)
 PLOT V(CLK)
 PLOT V(DIN)
 PLOT V(VDD)* I(V_V31)
 PRINT V(VDD)* I(V_V31)
+write V(VDD)* I(V_V31)
+wrdata file.csv V(VDD)* I(V_V31)
 .endc
 .end  
