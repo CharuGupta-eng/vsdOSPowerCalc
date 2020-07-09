@@ -9,16 +9,19 @@ For power analysis I simulate D flip flop using pass transistor, transmission ga
 # Average or Switching Power Dissipation
 The significant cause of it is switching activities that occur in circuits. Or we can say that it occur during charging and discharging of capacitance as shown in figure. 
                        ![image](https://user-images.githubusercontent.com/66687579/87031520-de161880-c200-11ea-9d5c-8a4f068904a4.png)
+
 Where CL is loading capacitor, VDD is power supply, α is activity factor and f is clock frequency. To evaluate average switching power in charging and discharging of capacitor we integrate power energy needed to charge to VDD and discharge to ground level while applying input waveform which have zero rise and fall time with time period T
                                                  
                                                 CMOS inverter 
-             ![image](https://user-images.githubusercontent.com/66687579/87031719-28979500-c201-11ea-8944-cfce77c11f65.png)
+            
+  ![image](https://user-images.githubusercontent.com/66687579/87031719-28979500-c201-11ea-8944-cfce77c11f65.png)
 
 # Leakage or Static Power Dissipation: 
 It occur when circuit is not active or in OFF state. It is a function of the supply voltage (VDD), threshold Voltage (Vth), and transistor dimensions. The main components of leakage current in the scaled devices which also caused power dissipation are shown in figure.
                                                   
                                                   Major leakage current component in NMOS
-        ![image](https://user-images.githubusercontent.com/66687579/87031815-3d742880-c201-11ea-9721-0bf197a5cb5e.png)
+        
+  ![image](https://user-images.githubusercontent.com/66687579/87031815-3d742880-c201-11ea-9721-0bf197a5cb5e.png)
 
 
 # Inputs for Python Power Tool
