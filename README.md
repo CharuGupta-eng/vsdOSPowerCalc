@@ -8,7 +8,8 @@ For power analysis I simulate D flip flop using pass transistor, transmission ga
 
 # Average or Switching Power Dissipation
 The significant cause of it is switching activities that occur in circuits. Or we can say that it occur during charging and discharging of capacitance as shown in figure. 
-                       ![image](https://user-images.githubusercontent.com/66687579/87031520-de161880-c200-11ea-9d5c-8a4f068904a4.png)
+                       
+  ![image](https://user-images.githubusercontent.com/66687579/87031520-de161880-c200-11ea-9d5c-8a4f068904a4.png)
 
 Where CL is loading capacitor, VDD is power supply, α is activity factor and f is clock frequency. To evaluate average switching power in charging and discharging of capacitor we integrate power energy needed to charge to VDD and discharge to ground level while applying input waveform which have zero rise and fall time with time period T
                                                  
@@ -22,6 +23,15 @@ It occur when circuit is not active or in OFF state. It is a function of the sup
                                                   Major leakage current component in NMOS
         
   ![image](https://user-images.githubusercontent.com/66687579/87031815-3d742880-c201-11ea-9721-0bf197a5cb5e.png)
+ 
+ # Power Tool Strategy
+ 
+ ## For calculating Average power
+I placed a power meter between power supply and  device as shown in figure below and calculate the product of average current and Voltage. For calculating average current i placed one extra power source of 0V in netlist. 
+                                               
+  
+  ## For calculating leakage power
+I remove all non constant power supply voltages and calculate the product of leakage current and Voltage. For calculating leakage current i      placed one extra power source of 0V in netlist. 
 
 
 # Inputs for Python Power Tool
@@ -36,8 +46,72 @@ It occur when circuit is not active or in OFF state. It is a function of the sup
    
 # Python Power tool with example
    1.First download or clone this repository.
+                 
+                 git clone https://github.com/CharuGupta-eng/vsdOSPowerCalc
    
    2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+   
+   3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
+   
+ # USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+
+1. To run code
+       
+       $ python POW.py
+            or
+       $ python3 POW.py
+            or
+       chmod 777 POW.py
+           ./POW.py     
+     
+ Depending on your system.          
+2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
+### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
+
+                                               Python scipt 
+![image](https://user-images.githubusercontent.com/66687579/86670466-494dc800-c012-11ea-8e05-cf1d5ecee6d1.png)
+
+                                              
+
+                                               DFFTG.cir file 
+                                               
+ ![image](https://user-images.githubusercontent.com/66687579/86670547-62ef0f80-c012-11ea-97f8-2b481e59f6d5.png)                                              
+                                         
+                                   Showing supply voltage value and node name on schematic
+                                  
+![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
+                                 
+                                   
+
+                                         Showing Time Period In Schematic                                         
+![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
+                                  
+
+ 4.Finally you get average power value.
+ 
+# PYTHON SCRIPT TO FIND LEAKAGE POWER
+1. Run script by writing
+            
+            python leakage.py 
+                or 
+           
+           chmod 777 leakage.py
+           ./leakage.py
+              or
+          
+          python3 leakage.py
+2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing non constant voltage sources (pulse) and no needs to remove any other line.  
+
+                                                    Python script
+                                                    
+ ![image](https://user-images.githubusercontent.com/66687579/86589743-d9a4f200-bfab-11ea-960f-3b3d55ee9adc.png) 
+
+                                                   
+                                                    
+                                               
+
+3.You get leakage power on ngspice
+   
    
 # Python Power Tool Outputs interpretation
   Both leakage and average switching power are displayed in Watts.
@@ -117,69 +191,39 @@ Following steps to be followed to run tool to get average power and leakage powe
 1. To clone respository or download files, Open terminal first and type
          
          $ sudo apt install -y git
-         $ 
-2. 
+         $ git clone https://github.com/CharuGupta-eng/vsdOSPowerCalc 
 
-3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
-   
-  # USE PYTHON SCRIPT TO FIND LEAKAGE POWER
-
-1. To run code
-       
-       $ python POW.py
-            or
-       $ python3 POW.py
-            or
-       chmod 777 POW.py
-           ./POW.py     
-     
- Depending on your system.          
-2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
-### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
-
-                                               Python scipt 
-![image](https://user-images.githubusercontent.com/66687579/86670466-494dc800-c012-11ea-8e05-cf1d5ecee6d1.png)
-
-                                              
-
-                                               DFFTG.cir file 
-                                               
- ![image](https://user-images.githubusercontent.com/66687579/86670547-62ef0f80-c012-11ea-97f8-2b481e59f6d5.png)                                              
-                                         
-                                   Showing supply voltage value and node name on schematic
-                                  
-![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
-                                 
-                                   
-
-                                         Showing Time Period In Schematic                                         
-![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
-                                  
-
- 4.Finally you get average power value.
- 
-# PYTHON SCRIPT TO FIND LEAKAGE POWER
-1. Run script by writing
+2. To get power code in your system
             
-            python leakage.py 
-                or 
-           
-           chmod 777 leakage.py
-           ./leakage.py
-              or
-          
-          python3 leakage.py
-2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing non constant voltage sources (pulse) and no needs to remove any other line.  
+            Ngspice powcalc
+         $ cd Ngspice\ powcalc /
+ 3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
+ 
+ 4. To run code for calculating average power
+      
+         $ python POW.py
+            or
+        $ python3 POW.py
+            or
+        chmod 777 POW.py
+           ./POW.py   
+  5. Ener the name of file, Supply voltage name, node name of supply voltage and value of value of supply voltage.
+  
+  6. Average power value is displayed.
+  
+  7. To run code for calculating leakage power
+      
+         $ python Leakage.py
+            or
+         $ python3 Leakage.py
+            or
+         chmod 777 Leakage.py
+           ./POW.py   
+   8. Ener the name of file after removing all non constant voltage source from netlist, Supply voltage name, node name of supply voltage and value       of value of supply voltage.
+   
+   9. Leakage power value is displayed.
+   
 
-                                                    Python script
-                                                    
- ![image](https://user-images.githubusercontent.com/66687579/86589743-d9a4f200-bfab-11ea-960f-3b3d55ee9adc.png) 
-
-                                                   
-                                                    
-                                               
-
-3.You get leakage power on ngspice
 
 ## Unit of output displayed by power analysis tool
 Both leakage and average switching power are displayed in Watts.
