@@ -9,7 +9,7 @@ vs = (input("Enter the name of the voltage supply (e.g. V_V20): "))
 #Vsup = (input("enter name of supply voltage source\n\n"))
 
 myinp=open(s,"r")
-shakes = open("poweranalysis.cir", "w")
+shakes = open("powerLeakage.cir", "w")
 done=False
 
 for line in myinp.readlines():
@@ -34,6 +34,6 @@ shakes.write("Vtstp netnet {} DC 0" .format(vd))
 
 shakes.write("\n.op\n.control\nrun\nprint I(Vtstp)*V({})\n.endc\n.end".format(vd))
 shakes.close()
-os.system('ngspice poweranalysis.cir')
+os.system('ngspice powerLeakage.cir')
 
 
