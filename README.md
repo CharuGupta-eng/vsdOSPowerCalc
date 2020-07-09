@@ -13,14 +13,14 @@ The significant cause of it is switching activities that occur in circuits. Or w
 
 Where CL is loading capacitor, VDD is power supply, α is activity factor and f is clock frequency. To evaluate average switching power in charging and discharging of capacitor we integrate power energy needed to charge to VDD and discharge to ground level while applying input waveform which have zero rise and fall time with time period T
                                                  
-                                                CMOS inverter 
+                                            CMOS inverter 
             
   ![image](https://user-images.githubusercontent.com/66687579/87031719-28979500-c201-11ea-8944-cfce77c11f65.png)
 
 # Leakage or Static Power Dissipation: 
 It occur when circuit is not active or in OFF state. It is a function of the supply voltage (VDD), threshold Voltage (Vth), and transistor dimensions. The main components of leakage current in the scaled devices which also caused power dissipation are shown in figure.
                                                   
-                                                  Major leakage current component in NMOS
+                                 Major leakage current component in NMOS
         
   ![image](https://user-images.githubusercontent.com/66687579/87031815-3d742880-c201-11ea-9721-0bf197a5cb5e.png)
  
@@ -29,7 +29,8 @@ It occur when circuit is not active or in OFF state. It is a function of the sup
  ## For calculating Average power
 I placed a power meter between power supply and  device as shown in figure below and calculate the product of average current and Voltage. For calculating average current i placed one extra power source of 0V in netlist. 
               
-                         The power meter circuit used for the simulation of average dynamic power
+                         
+                  The power meter circuit used for the simulation of average dynamic power
    ![image](https://user-images.githubusercontent.com/66687579/87037611-1cfc9c00-c20a-11ea-9455-2967a64e90e7.png)
 
                                                
