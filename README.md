@@ -198,15 +198,11 @@ Following steps to be followed to run tool to get average power and leakage powe
          $ sudo apt install -y git
          $ git clone https://github.com/CharuGupta-eng/vsdOSPowerCalc 
 
-2. To get power code in your system
-            
-            
-         $ cd Ngspice\ powcalc /
- 3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
+ 2. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
  
- 4. .tran line must be in your netlist.
+ 3. .tran line must be in your netlist.
  
- 5. To run code for calculating average power
+ 4. To run code for calculating average power
       
          $ python POW.py
             or
@@ -214,11 +210,11 @@ Following steps to be followed to run tool to get average power and leakage powe
             or
         chmod 777 POW.py
            ./POW.py   
-  6. Ener the name of file, Supply voltage name, node name of supply voltage and value of value of supply voltage.
+  5. Ener the name of file, Supply voltage name, node name of supply voltage and value of value of supply voltage.
   
-  7. Average power value is displayed.
+  6. Average power value is displayed.
   
-  8. To run code for calculating leakage power
+  7. To run code for calculating leakage power
       
          $ python Leakage.py
             or
@@ -226,9 +222,9 @@ Following steps to be followed to run tool to get average power and leakage powe
             or
          chmod 777 Leakage.py
            ./POW.py   
-   9. Ener the name of file after removing all non constant voltage source from netlist, Supply voltage name, node name of supply voltage and value       of value of supply voltage.
+   8. Ener the name of file after removing all non constant voltage source from netlist, Supply voltage name, node name of supply voltage and value       of value of supply voltage.
    
-   10. Leakage power value is displayed.
+   9. Leakage power value is displayed.
    
 
 
