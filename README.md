@@ -8,12 +8,19 @@ For power analysis I simulate D flip flop using pass transistor, transmission ga
 
 # Inputs for Python Power Tool
  First input is spice netlist. While executing script some more inputs are taken such as
-    Name of Supply Voltage
-    Node name of Supply Voltage
-    For synchronous circuit time perod of clock and for asynchronous minimum time period among all input pulse
+   1. Name of Supply Voltage
+   
+   2. Node name of Supply Voltage
+   
+   3. For synchronous circuit time perod of clock and for asynchronous minimum time period among all input pulse.
+   
+   4. User has to remove all non constant voltage sources from the netlist for leakage power.
+   
 # Python Power tool with example
-   First download or clone this repository.
-   To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+   1.First download or clone this repository.
+   
+   2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+   
 # Python Power Tool Outputs interpretation
   Both leakage and average switching power are displayed in Watts.
   After running POW.py for average power clculation poweranalysis.cir and Leakage.py for leakage power calculation powerleakage.cir file are added   in your system. These are modified netlist for power calculation.
@@ -38,6 +45,7 @@ For proper working of this tool cicuit must have single power supply source.Henc
 
 ## Dependencies
 This tool works in NGSPICE and PYTHON only.
+Prerequisite things to run power analysis tool.
 ### About Ngspice
 Ngspice is an open source mixed signal circuit simulator.
 
@@ -69,6 +77,7 @@ NOTE: I used panda module so firstly  you have to download  panda
    FOR PYTHON 2
     
     sudo apt-get install python-pip
+   
    FOR PYTHON 3
     
     sudo apt-get install python3-pip
@@ -81,308 +90,31 @@ step 3: When pip installed, type the command to insatll pandas
     
     pip install pandas
  
+NOTE: ngspice shell and python code are in same folder. 
  
- 
-
-### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
-
-I. D FF using PT
-
-
-
-
-                                              Circuit Schematic
-![](https://user-images.githubusercontent.com/66687579/84521097-2ae5fc80-acf2-11ea-9c34-c959429fc6d2.png)
-
-                                                
-
-
-
-
-
-
-                                            Input Output Waveform
-![image](https://user-images.githubusercontent.com/66687579/85319276-e96a0400-b4de-11ea-8e50-52cf62fff3a6.png)
-
-
-
-
-
-                                            Power Calculation
-![](https://user-images.githubusercontent.com/66687579/84529828-c03bbd80-acff-11ea-90a4-7f3b1884de1d.png)
-
-
-
-
-                                       Average Power Calculation from NGSPICE
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
-                                       
-                                       
-
-
-
-
-                            
-
-
-
-
-II. D FF using TG
-
-                                             Circuit Schematic
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84522947-2242f580-acf5-11ea-8c3f-53da93747b8f.png)
-                                           
-                                           
-                                           
-                                           
-                                           
-                                           
-                                           Input Output Waveform
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85319522-44036000-b4df-11ea-9431-de8df45f2ee0.png)
-                                           
-                                           
-                                           
-                                           Power Calculation
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84530960-689e5180-ad01-11ea-99bd-3fc8b6396c54.png)
-
-
-
-
-                                         Average Power Calculation from NGSPICE 
-                                         
-                                          
-![image](https://user-images.githubusercontent.com/66687579/86125148-cf8d7a00-baf9-11ea-859d-649e08bdcd3b.png)                                          
-                                         
-
-
-
-
-
-
-
-III. D FF using stack transistor
-
-                                                Circuit Schematic
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84524727-0b51d280-acf8-11ea-920b-c28f19492a05.png)
-
-
-
-                                                Input Output Waveform
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85320016-14a12300-b4e0-11ea-86bc-96da5e7eb8c6.png)
-
-
-
-
-                                               Power Calculation
-
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84524791-2886a100-acf8-11ea-8627-e424517d5bd1.png)
-
-
-
-
-
-IV. Line decoder using CMOS LOGIC 
-
-
-                                             Circuit Schematic
-
-
-![](https://user-images.githubusercontent.com/66687579/84528701-c9c42600-acfd-11ea-8c86-99fce7130868.png)
-                                          
-                                          
-                                          Input Output Waveform
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85320349-8f6a3e00-b4e0-11ea-85b9-ddd5747aa46a.png)
-
-
-
-
-
-
-V. Line decoder using alternate DVL and TG
-
-                                             Circuit Schematic
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84528816-fb3cf180-acfd-11ea-8911-e188f1ce04d6.png)
-                                          
-                                          
-                                          
-                                          Input Output Waveform
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85320623-fa1b7980-b4e0-11ea-8339-2cab5a689901.png)
-
-
-
-
-
-
-
-
-
-
-
-
-VI. MUX using PT
-
-
-                                           Circuit Schematic
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84526325-bebbc680-acfa-11ea-8248-b40b62921c6a.png)
-                                          
-                                          
-                                          
-                                          
-                                          Input Output Waveform
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85321127-d147b400-b4e1-11ea-8d2f-a4d0cfc32a0b.png)
-
-
-                                         
-                                         
-                                         
-                                         
-                                         Power Calculation
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84526461-f4f94600-acfa-11ea-93f1-c0ab4db6021a.png)
-
-
-
-
-
-VIi. MUX using TG 
-                                       
-                                       
-                                       
-                                       Circuit Schematic
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84527660-e7908b80-acfb-11ea-87e9-5e1346a2c117.png)
-                                      
-                                      
-                                      
-                                      
-                                      Input Output Waveform
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/85321568-7b274080-b4e2-11ea-82a7-4c9e2595f4d7.png)
-                                       
-                                       
-                                       
-                                       
-                                       Power Calculation
-
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84527711-02630000-acfc-11ea-9166-546ba8a8f74b.png)
-
-
- Some average power curve which i got on ngspice steps
-
-                                              INVETRER
-                                              
+# Steps to run PYTHON POWER TOOL
+
+Following steps to be followed to run tool to get average power and leakage power of any circuit:
+
+1. To clone respository or download files, Open terminal first and type
+         
+         $ sudo apt install -y git
+         $ 
+2. 
+
+3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
+   
+  # USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+
+1. To run code
+       
+       $ python POW.py
+            or
+       $ python3 POW.py
+            or
+       chmod 777 POW.py
+           ./POW.py     
      
-![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
-                                              
-                                              MUX using PT
-![image](https://user-images.githubusercontent.com/66687579/86570741-05b17a80-bf8e-11ea-92a6-a984b6cb7d0a.png)
-
-                                         
-                                              1BIT ADDER
-![image](https://user-images.githubusercontent.com/66687579/86346734-f9ba7580-bc7a-11ea-974b-9e68d0136e87.png)
-                                            
-                                              
-                                              DFF using PT
-                                              
- ![image](https://user-images.githubusercontent.com/66687579/86125395-34e16b00-bafa-11ea-91cf-b1e0367a5f8f.png)
- 
-                                        Inverter design By my friend
- ![image](https://user-images.githubusercontent.com/66687579/86346814-148cea00-bc7b-11ea-9fbb-1b5f965d1c4e.png) 
-
-# USE OF PYTHON SCRIPT TO FIND AVERAGE POWER
-NOTE: ngspice shell and python code are in same folder.
-NOTE: I am usind panda module so firstly  you have to download  panda
- ### window user
- In command prompt write
-    
-    pip install pandas
-
-### linux or ubuntu users
- step 1 : Open your terminal (ctrl + Alt + T), then type these command 
-   
-   
-   FOR PYTHON 2
-    
-    sudo apt-get install python-pip
-   FOR PYTHON 3
-    
-    sudo apt-get install python3-pip
-   
-Step 2: Write this command also 
-        
-     sudo python3 -m pip install pandas
-
-step 3: When pip installed, type the command to insatll pandas
-    
-    pip install pandas
-
-1. Run POW.py by writing 
-           
-           python POW.py 
-                or 
-           
-           chmod 777 POW.py
-           ./POW.py
-              or
-          
-          python3 POW.py
  Depending on your system.          
 2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
 ### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
@@ -407,13 +139,8 @@ step 3: When pip installed, type the command to insatll pandas
                                   
 
  4.Finally you get average power value.
-
-   
-
-                            
  
-
-# USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+# PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
             
             python leakage.py 
