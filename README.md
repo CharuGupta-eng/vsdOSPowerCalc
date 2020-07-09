@@ -6,164 +6,83 @@ Power analysis of design can be reconnoitred at several levels such as system le
 
 For power analysis I simulate D flip flop using pass transistor, transmission gate, pass transistor with stacking of transistor. Simulate 2-4 line decoder using CMOS logic and TG, DVL alternatively. Simulate 2-1 MUX using pass transistor, transmission gate, MTCMOS logic. Generate netlist and input output and power(V * I) waveform for all schematic circuit.
 
-Simulations done on PSPICE which runs under windows, so no need of linux commands.
-For schematic cicuit we use either TSMC 180nm or OSU018 model parameter file for NMOS and PMOS transistors.In this project i used TSMC 180nm need to change to OSU018.
+# Inputs for Python Power Tool
+ First input is spice netlist. While executing script some more inputs are taken such as
+    Name of Supply Voltage
+    Node name of Supply Voltage
+    For synchronous circuit time perod of clock and for asynchronous minimum time period among all input pulse
+# Python Power tool with example
+   First download or clone this repository.
+   To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+# Python Power Tool Outputs interpretation
+  Both leakage and average switching power are displayed in Watts.
+  After running POW.py for average power clculation poweranalysis.cir and Leakage.py for leakage power calculation powerleakage.cir file are added   in your system. These are modified netlist for power calculation.
+  To view average power curve and power values you can run these netlist in ngspice.
+###  Average Switching Power netlist can be run by following command.
+     $ ngspice poweranalysis.cir
+     
+### Following power plot you get (Depending on your cicuit)
+                                               
+                                               INVETRER
+                                              
+     
+![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
 
+###  Leakage Power netlist can be run by following command.
+     $ ngspice powerleakage.cir
+     
+# Future Work
+For proper working of this tool cicuit must have single power supply source.Hence it can be modified so that it works for multipile supply voltages. I tested this tool for osu 180 and TSMC 180 technologoy parameter file only.
+
+# Python Power Tool Usage
+
+## Dependencies
+This tool works in NGSPICE and PYTHON only.
 ### About Ngspice
 Ngspice is an open source mixed signal circuit simulator.
 
 #### Installing Ngspice
 
-##### For Ubuntu
  Open your terminal and type the following to install Ngspice
  
- $ sudo apt-get install -y ngspice
+    $ sudo apt-get install  ngspice
  
- ###### Running the Simulation
- Download all files from Ngspice Simulator folder.
+#### Installing Python
+
+ Open your terminal and type the following to install Ngspice
  
- To enter the Ngspice Shell, open the terminal and type:
+    $ sudo apt-get install  python 
+ NOTE: ngspice shell and python code are in same folder.
  
- $ ngspice
+ # To run Python Script to find average power
+
+NOTE: I used panda module so firstly  you have to download  panda
+ ### window user
+ In command prompt write
+    
+    pip install pandas
+
+### linux or ubuntu users
+ step 1 : Open your terminal (ctrl + Alt + T), then type these command 
+   
+   
+   FOR PYTHON 2
+    
+    sudo apt-get install python-pip
+   FOR PYTHON 3
+    
+    sudo apt-get install python3-pip
+   
+Step 2: Write this command also 
+        
+     sudo python3 -m pip install pandas
+
+step 3: When pip installed, type the command to insatll pandas
+    
+    pip install pandas
  
- To simulate a netlist, type:
  
- ngspice 1-> source <filename>.cir
  
- You can exit from ngspice Shell by typing:
- 
- ngspice 1-> exit
-        or
- ngspice 1 -> quit
-
-## Steps for Simulation on Window
-
-First install PSPICE from any available site. After installation of PSPICE follow following instructions:
-1. Open PSPICE, Click on file -> new -> project -> enter name of your project -> select Analog or mixed A/D -> ok
-
-
-![](https://user-images.githubusercontent.com/66687579/84684588-7ac4fd80-af56-11ea-8086-9f3bd5d6c547.png)
-
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84686322-5b7b9f80-af59-11ea-9a54-36eb751522b8.png)
-
-
-
-2. Draw schematic.
-3. Right click on nmos -> Edit properties -> enter required value of W and L.
-
-
-![](https://user-images.githubusercontent.com/66687579/84685743-6550d300-af58-11ea-85d0-416e162b62d3.png)
-
-
-
-4. Right click on nmos -> Edit Pspice Model -> enter required model parameter file of either TSMC 180nm or OSU018.
-
-
-
-![](https://user-images.githubusercontent.com/66687579/84686035-da240d00-af58-11ea-9dd7-9cd12adba68e.png)
-
-5. Repeat 3 and 4 steps for pmos.
-6. Save schematic.
-7. PSpice -> edit simulation profile -> select required analysis -> Apply -> Ok.
-
-
-![](https://user-images.githubusercontent.com/66687579/84687216-fb85f880-af5a-11ea-9798-486f39fca773.png)
-
-
-
-8. TO run, PSpice -> Run.
-
-![](https://user-images.githubusercontent.com/66687579/84687023-9f22d900-af5a-11ea-98a3-9b22a2b221e4.png)
-
-
-
-9. Simulation window open, Trace -> Add trace -> select required current or voltage -> ok.
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/84695058-dd72c500-af67-11ea-9a65-0fd91d1812c0.png)
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/84695125-fa0efd00-af67-11ea-9aa5-6952cae39cb3.png)
-
-
-
-
-10. You get output on simulation window.
-
-
-
-
-![image](https://user-images.githubusercontent.com/66687579/84695148-02ffce80-af68-11ea-822c-019f9e4010ea.png)
-
-
-
-
-
-### Calculation of power in PSPICE:
-1. In simulation window, Tool -> Measurement -> Select powerDissipation -> Eval -> Enter required voltage and current of load along with time duration -> Ok.
-2. Power dissipation in uW is obtained.
-
-
-#### Installation and simulation on LINUX
-
-Note: use ** for comment
-
-** uninstall and clean up wine completely:
-
-sudo apt-get remove --purge wine winetricks    # not enough, needs also:
-sudo apt-get remove --purge wine1.2            
-sudo apt-get autoremove --purge             # for wine1.2-gecko etc
-ls -d /home/administrator/.wine*  # shows: .wine/ .winetrickscache/
-rm -rf ~/.wine*
-
-** install wine 
-sudo apt-get install wine # installs winetricks, wine1.2-gecko
-
-** run wineconfig, and set win 98 mode
-winecfg 
-
-** run winetricks and install dependencies
-** note: mfc42=vcrun6
-winetricks corefonts dcom98 mfc42
-
-
-** run wineconfig again, and under 
-** 'Libraries', set rpcrt4 to "built-in" - NOT 'native';
-** else installer will crash @ 'Call from 0x7b836852 to unimplemented function rpcrt4.dll.I_RpcExceptionFilter, aborting'
-winecfg 
-
-** now run the Pspice installer
-** install Pspice in a dir without spaces; 
-** for example /home/user/Orcad_Demo
-** that will be Z:\\home\\user\\Orcad_Demo for wine
-cd ps9_1/
-wine Setup.exe
-
-** Install should be done now, 
-** programs start
-
-** check whether dll's have been registered in wine registry:
-grep 'ipspice' ~/.wine/*.reg
-grep 'sim' ~/.wine/*.reg
-grep 'pspi' ~/.wine/*.reg
-
-** check if PSPICEEV.INI is installed
-$ ls ~/.wine/drive_c/windows/
-
-** run wineconfig YET again, and under 
-** 'Libraries', set ole32, oleaut32, rpcrt4 to "built-in" - NOT 'native';
-winecfg 
-
-** check if by any chance multiple copies of SIMSRVR.EXE have been started;
-** if so kill them
-ps axf | grep -i 'sim'
-sudo killall SIMSRVR.EXE
 
 ### Following are cicuit schematic,input output waveforms and power calculation for each schematic cicuit.
 
