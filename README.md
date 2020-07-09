@@ -28,6 +28,10 @@ It occur when circuit is not active or in OFF state. It is a function of the sup
  
  ## For calculating Average power
 I placed a power meter between power supply and  device as shown in figure below and calculate the product of average current and Voltage. For calculating average current i placed one extra power source of 0V in netlist. 
+              
+                         The power meter circuit used for the simulation of average dynamic power
+   ![image](https://user-images.githubusercontent.com/66687579/87037611-1cfc9c00-c20a-11ea-9455-2967a64e90e7.png)
+
                                                
   
   ## For calculating leakage power
@@ -49,11 +53,11 @@ I remove all non constant power supply voltages and calculate the product of lea
                  
                  git clone https://github.com/CharuGupta-eng/vsdOSPowerCalc
    
-   2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+  2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
    
-   3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
+  3. Save the netlist of the cicuit, model parameters file, ngspice and python code in the same folder.
    
- # USE PYTHON SCRIPT TO FIND LEAKAGE POWER
+ # USE PYTHON SCRIPT TO FIND Average POWER
 
 1. To run code
        
@@ -122,10 +126,10 @@ I remove all non constant power supply voltages and calculate the product of lea
      
 ### Following power plot you get (Depending on your cicuit)
                                                
-                                               INVETRER
+                                  Average Power Calculation on NGSPICE(DFFusing TG)
                                               
      
-![image](https://user-images.githubusercontent.com/66687579/86346683-ea3b2c80-bc7a-11ea-916a-84e0f54febc4.png)
+![image](https://user-images.githubusercontent.com/66687579/86125148-cf8d7a00-baf9-11ea-859d-649e08bdcd3b.png)
 
 ###  Leakage Power netlist can be run by following command.
      $ ngspice powerleakage.cir
