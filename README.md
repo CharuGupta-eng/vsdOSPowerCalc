@@ -200,7 +200,7 @@ Following steps to be followed to run tool to get average power and leakage powe
 
 2. To get power code in your system
             
-            Ngspice powcalc
+            
          $ cd Ngspice\ powcalc /
  3. Save the netlist of your cicuit, model parameters file, ngspice and python code in the same folder.
  
