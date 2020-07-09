@@ -7,9 +7,18 @@ Power analysis of design can be reconnoitred at several levels such as system le
 For power analysis I simulate D flip flop using pass transistor, transmission gate, pass transistor with stacking of transistor. Simulate 2-4 line decoder using CMOS logic and TG, DVL alternatively. Simulate 2-1 MUX using pass transistor, transmission gate, MTCMOS logic. Generate netlist and input output and power(V * I) waveform for all schematic circuit.
 
 # Average or Switching Power Dissipation
-The significant cause of it is switching activities that occur in circuits. Or we can say that it occur during charging and discharging of capacitance as shown in figure.
-                                                
+The significant cause of it is switching activities that occur in circuits. Or we can say that it occur during charging and discharging of capacitance as shown in figure. 
+                       ![image](https://user-images.githubusercontent.com/66687579/87031520-de161880-c200-11ea-9d5c-8a4f068904a4.png)
 Where CL is loading capacitor, VDD is power supply, α is activity factor and f is clock frequency. To evaluate average switching power in charging and discharging of capacitor we integrate power energy needed to charge to VDD and discharge to ground level while applying input waveform which have zero rise and fall time with time period T
+                                                 
+                                                CMOS inverter 
+             ![image](https://user-images.githubusercontent.com/66687579/87031719-28979500-c201-11ea-8944-cfce77c11f65.png)
+
+# Leakage or Static Power Dissipation: 
+It occur when circuit is not active or in OFF state. It is a function of the supply voltage (VDD), threshold Voltage (Vth), and transistor dimensions. The main components of leakage current in the scaled devices which also caused power dissipation are shown in figure.
+                                                  
+                                                  Major leakage current component in NMOS
+        ![image](https://user-images.githubusercontent.com/66687579/87031815-3d742880-c201-11ea-9721-0bf197a5cb5e.png)
 
 
 # Inputs for Python Power Tool
@@ -169,9 +178,12 @@ Following steps to be followed to run tool to get average power and leakage powe
 
 3.You get leakage power on ngspice
 
+## Unit of output displayed by power analysis tool
+Both leakage and average switching power are displayed in Watts.
 
+### If there is an issue running tool, please contact administrator for support or report in “issues” section of GitHub
 
-## Contact information.
+# Contact information.
 1. Charu Gupta M.tech VLSI Design and Embedded Systems DTU,Delhi charugupta2511@gmail.com
 2. Kunal Ghosh Director, VSD Corp.Pvt. Ltd. kunalpghosh@gmail.com
 3. Philipp Guhring Software Architect at LibreSilicon Association pg@futureware.at
