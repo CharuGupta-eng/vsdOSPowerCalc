@@ -1,10 +1,16 @@
 # OS-power-analysis-tool
 Power analysis has materialized as a principal theme in today’s world of semiconductor industries. Very Large Scaled Integrated Circuits (VLSI) are far beyond human ability because of complexity. So to analyse power in these circuits we use open source computer aided tools, plenty of tools are available but most of them are costly. I designed open source power analysis tool for the academic use which analyse power dissipation (average switching and leakage power) efficiently.
 
-## Power analysis
+# Power analysis
 Power analysis of design can be reconnoitred at several levels such as system level, architectural level, logic level, circuit level and device level. Power analyser is a tool which determines how much power is utilize by a system or circuit. In this process we give circuits as input along with few operating conditions to power analyser to get report about the power. 
 
 For power analysis I simulate D flip flop using pass transistor, transmission gate, pass transistor with stacking of transistor. Simulate 2-4 line decoder using CMOS logic and TG, DVL alternatively. Simulate 2-1 MUX using pass transistor, transmission gate, MTCMOS logic. Generate netlist and input output and power(V * I) waveform for all schematic circuit.
+
+# Average or Switching Power Dissipation
+The significant cause of it is switching activities that occur in circuits. Or we can say that it occur during charging and discharging of capacitance as shown in figure.
+                                                
+Where CL is loading capacitor, VDD is power supply, α is activity factor and f is clock frequency. To evaluate average switching power in charging and discharging of capacitor we integrate power energy needed to charge to VDD and discharge to ground level while applying input waveform which have zero rise and fall time with time period T
+
 
 # Inputs for Python Power Tool
  First input is spice netlist. While executing script some more inputs are taken such as
