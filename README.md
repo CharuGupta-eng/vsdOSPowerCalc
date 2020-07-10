@@ -61,7 +61,7 @@ I remove all non constant power supply voltages and calculate the product of lea
   
   4. To see how we download ngspice, python3 and other useful things which have to download please see below in Python Power Tool Usage
      (Dependencies) section.
-  ### NOTE: This tool work properly in PYTHON3 it sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
+  ### NOTE: This tool work properly in PYTHON3. It sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
 
 # USE PYTHON SCRIPT TO FIND Average POWER
 
@@ -154,7 +154,7 @@ Ngspice is an open source mixed signal circuit simulator.
  
 #### Installing Python
  
-  ### NOTE: This tool work properly in PYTHON3 it sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
+  ### NOTE: This tool work properly in PYTHON3. It sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
 
  Open your terminal and type the following to install Python3
  
