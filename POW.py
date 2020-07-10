@@ -32,7 +32,7 @@ for line in myinp.readlines():
         #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
         #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
         line=''
-    if not done and not re.match(r'^(V_V\d+\s+N51925|\.endc|.end)',line) :
+    if not done and not re.match(r'^((.endc )| (.end  ))',line) :
         shakes.write(line)
 
 myinp.close()
@@ -51,7 +51,7 @@ shakes.close()
 os.system('ngspice poweranalysis.cir')
 
 file = pd.read_csv('AVPOWER.csv',sep=' ',header=None, names=["0","TIME","1","POWER","2"])
-print(file)
+#print(file)
 FILE1 = file[file["TIME"]<=T ]
 #print(FILE1)
 FILE2 = file[file["TIME"]==0]
