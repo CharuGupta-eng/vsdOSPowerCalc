@@ -1,5 +1,6 @@
 import os
 import re
+import pandas as pd
 
 print("You have to remove all NON CONSTANT (PULSE) input and clock pulses\n\n")
 s= (input("enter file name with .cir or .txt (e.g. TT.cir):"))
@@ -13,16 +14,16 @@ shakes = open("powerLeakage.cir", "w")
 done=False
 
 for line in myinp.readlines():
-    #if re.match(r'^\.tran',line):
+    if re.match(r'^\.tran',line):
         #line=line.rstrip()+" UIC\n"
-       # line=""
+        line=""
     if re.match(r'\.control',line):
         done=True
     if re.match(r'^'+vs,line):
         #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
         #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
         line=''
-    if not done and not re.match(r'^(V_V\d+\s+N51925|\.endc|.end|.tran)',line) :
+    if not done and not re.match(r'^((.endc )| (.end  ))', line):
         shakes.write(line)
 
 myinp.close()
@@ -32,7 +33,10 @@ shakes.write("Vtstp netnet {} DC 0" .format(vd))
 #Vtstp = (input("enter name of voltage source having 0V that you placed between Supply Voltage and pmos\n\n"))
 #k= (input("Enter name of node of supply voltage source (which you have given and used in place of all supply voltages)\n"))
 
-shakes.write("\n.op\n.control\nrun\nprint I(Vtstp)*V({})\n.endc\n.end".format(vd))
+shakes.write("\n.op\n.control\nrun\nprint I(Vtstp)*V({})\n".format(vd))
+#shakes.write("set filetype=ascii\nset time wr_singlescale\nset pwr wr_I(Vtstp)*V({})\noption numdgt=3\nwrdata AVPOWER.csv I(Vtstp)*V({})\n".format(vd,vd))
+#shakes.write("quit\n")
+shakes.write("\n.endc\n.end")
 shakes.close()
 os.system('ngspice powerLeakage.cir')
 
