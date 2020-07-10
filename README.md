@@ -31,7 +31,8 @@ I placed a power meter between power supply and  device as shown in figure below
               
                          
                   The power meter circuit used for the simulation of average dynamic power
-   ![image](https://user-images.githubusercontent.com/66687579/87037611-1cfc9c00-c20a-11ea-9455-2967a64e90e7.png)
+   ![image](https://user-images.githubusercontent.com/66687579/87151569-b93da600-c2d1-11ea-99c8-284ff100406c.png)
+
 
                                                
   
@@ -57,19 +58,20 @@ I remove all non constant power supply voltages and calculate the product of lea
   2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
    
   3. Save the netlist of the cicuit, model parameters file, ngspice and python code in the same folder.
-   
- # USE PYTHON SCRIPT TO FIND Average POWER
+  
+  4. To see how we download ngspice, python3 and other useful things which have to download please see below in Python Power Tool Usage
+     (Dependencies) section.
+  ### NOTE: This tool work properly in PYTHON3 it sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
+
+# USE PYTHON SCRIPT TO FIND Average POWER
 
 1. To run code
-       
-       $ python POW.py
-            or
+
        $ python3 POW.py
             or
        chmod 777 POW.py
            ./POW.py     
-     
- Depending on your system.          
+             
 2. Following window open in which you have to enter .txt file nameN Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
 ### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
 
@@ -97,14 +99,12 @@ I remove all non constant power supply voltages and calculate the product of lea
 # PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
             
-            python leakage.py 
+            python3 leakage.py 
                 or 
            
            chmod 777 leakage.py
            ./leakage.py
-              or
-          
-          python3 leakage.py
+            
 2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing non constant voltage sources (pulse) and no needs to remove any other line.  
 
                                                     Python script
@@ -153,8 +153,10 @@ Ngspice is an open source mixed signal circuit simulator.
     $ sudo apt-get install  ngspice
  
 #### Installing Python
+ 
+  ### NOTE: This tool work properly in PYTHON3 it sometime create problem in exexution in PYTHON2 so i recommend to use in PYTHON3 only.
 
- Open your terminal and type the following to install Ngspice
+ Open your terminal and type the following to install Python3
  
     $ sudo apt-get install  python 
  NOTE: ngspice shell and python code are in same folder.
@@ -168,14 +170,7 @@ NOTE: I used panda module so firstly  you have to download  panda
     pip install pandas
 
 ### linux or ubuntu users
- step 1 : Open your terminal (ctrl + Alt + T), then type these command 
-   
-   
-   FOR PYTHON 2
-    
-    sudo apt-get install python-pip
-   
-   FOR PYTHON 3
+ step 1 : Open your terminal (ctrl + Alt + T), then type these command
     
     sudo apt-get install python3-pip
    
@@ -203,9 +198,7 @@ Following steps to be followed to run tool to get average power and leakage powe
  3. .tran line must be in your netlist.
  
  4. To run code for calculating average power
-      
-         $ python POW.py
-            or
+     
         $ python3 POW.py
             or
         chmod 777 POW.py
@@ -216,8 +209,7 @@ Following steps to be followed to run tool to get average power and leakage powe
   
   7. To run code for calculating leakage power
       
-         $ python Leakage.py
-            or
+
          $ python3 Leakage.py
             or
          chmod 777 Leakage.py
