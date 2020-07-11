@@ -28,7 +28,7 @@ for line in myinp.readlines():
         line=line.rstrip()+" UIC\n"
     if re.match(r'\.control',line):
         done=True
-    if re.match(r'^'+vs,line):
+    if re.match(r'^'+vs+'\s',line):
         #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
         #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
         line=''
