@@ -19,13 +19,15 @@ for line in myinp.readlines():
         line=""
     if re.match(r'\.control',line):
         done=True
-    if re.match(r'^'+vs+'\s',line):
-        #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
-        #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
-        line=''
+
     if not done and not re.match(r'^((.endc )| (.end  ))', line):
         shakes.write(line)
-
+for line in myinp.readlines():
+    if re.match(r'^'+vs+'\s',line):
+            # if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
+            #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
+        line =''
+        break
 myinp.close()
 
 shakes.write("VSUP netnet 0 DC {}\n" .format(V_value))
