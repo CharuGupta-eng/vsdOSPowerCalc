@@ -12,22 +12,21 @@ vs = (input("Enter the name of the voltage supply (e.g. V_V20): "))
 myinp=open(s,"r")
 shakes = open("powerLeakage.cir", "w")
 done=False
-
+firstv=True
 for line in myinp.readlines():
     if re.match(r'^\.tran',line):
         #line=line.rstrip()+" UIC\n"
         line=""
     if re.match(r'\.control',line):
         done=True
-
+    if firstv and re.match(r'^'+vs+'\s',line):
+        #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
+        #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
+        line=''
+        firstv=False
     if not done and not re.match(r'^((.endc )| (.end  ))', line):
         shakes.write(line)
-for line in myinp.readlines():
-    if re.match(r'^'+vs+'\s',line):
-            # if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
-            #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
-        line =''
-        break
+
 myinp.close()
 
 shakes.write("VSUP netnet 0 DC {}\n" .format(V_value))

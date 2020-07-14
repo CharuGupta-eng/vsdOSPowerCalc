@@ -22,16 +22,18 @@ BETA = (V_value*C)/(T*(10**9))
 myinp=open(s,"r")
 shakes = open("poweranalysis.cir", "w")
 done=False
+firstv=True
 
 for line in myinp.readlines():
     if re.match(r'^\.tran',line):
         line=line.rstrip()+" UIC\n"
     if re.match(r'\.control',line):
         done=True
-    if re.match(r'^'+vs+'\s',line):
+    if firstv and re.match(r'^'+vs+'\s',line):
         #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
         #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
         line=''
+        firstv=False
     if not done and not re.match(r'^((.endc )| (.end  ))',line) :
         shakes.write(line)
 
