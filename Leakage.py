@@ -2,7 +2,7 @@ import os
 import re
 import pandas as pd
 
-print("You have to remove all NON CONSTANT (PULSE) input and clock pulses\n\n")
+print("You have to replace all NON CONSTANT (PULSE) input and clock pulses with 0\n\n")
 s= (input("enter file name with .cir or .txt (e.g. TT.cir):"))
 V_value = float(input("enter value of Supply Voltage in V (e.g. 1.8): "))
 vd = (input("Enter name of node of supply voltage source (which you have given and used in place of all supply voltages)(e.g. VDD) \n"))
@@ -35,9 +35,18 @@ shakes.write("Vtstp netnet {} DC 0" .format(vd))
 #k= (input("Enter name of node of supply voltage source (which you have given and used in place of all supply voltages)\n"))
 
 shakes.write("\n.op\n.control\nrun\nprint I(Vtstp)*V({})\n".format(vd))
-#shakes.write("set filetype=ascii\nset time wr_singlescale\nset pwr wr_I(Vtstp)*V({})\noption numdgt=3\nwrdata APOWER.csv I(Vtstp)*V({})\n".format(vd,vd))
-#shakes.write("quit\n")
+shakes.write("set filetype=ascii\nset time wr_singlescale\nset pwr wr_I(Vtstp)*V({})\noption numdgt=3\nwrdata APOWER.csv I(Vtstp)*V({})\n".format(vd,vd))
+shakes.write("quit\n")
 shakes.write("\n.endc\n.end")
 shakes.close()
 os.system('ngspice powerLeakage.cir')
+file = pd.read_csv('APOWER.csv',sep=' ',header=None, names=["0","TIME","1","POWER","2"])
+#print(file)
+
+avg = file["POWER"].max()
+
+
+AV = avg*1000000
+#print("m: {} n: {}".format(m,n))
+print("LEAKAGE POWER IS {} W   OR   {}uW".format(avg,AV))
 
