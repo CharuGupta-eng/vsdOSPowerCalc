@@ -109,13 +109,14 @@ I remove all non constant power supply voltages and calculate the product of lea
 
                                                     Python script
                                                     
- ![image](https://user-images.githubusercontent.com/66687579/86589743-d9a4f200-bfab-11ea-960f-3b3d55ee9adc.png) 
+ ![image](https://user-images.githubusercontent.com/66687579/88431652-68bd6100-ce18-11ea-93f1-7d989441756e.png)
+ 
 
                                                    
                                                     
                                                
 
-3.You get leakage power on ngspice
+3.You get leakage power.
    
    
 # Python Power Tool Outputs interpretation
