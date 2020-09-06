@@ -1,13 +1,26 @@
 import os
 import re
 import pandas as pd
+import getopt
+import sys
 
-print("You have to replace all NON CONSTANT (PULSE) input and clock pulses with 0\n\n")
-s= (input("enter file name with .cir or .txt (e.g. TT.cir):"))
-V_value = float(input("enter value of Supply Voltage in V (e.g. 1.8): "))
-vd = (input("Enter name of node of supply voltage source (which you have given and used in place of all supply voltages)(e.g. VDD) \n"))
-vs = (input("Enter the name of the voltage supply (e.g. V_V20): "))
-#Vsup = (input("enter name of supply voltage source\n\n"))
+argv = sys.argv[1:]
+
+
+opts, args = getopt.getopt(argv, "i:v:", ["inputfile=", "supplyvoltage"])
+print(opts, args)
+for opt, arg in opts:
+    if opt == '-i' or opt == '--inputfile':
+                s = arg
+    elif opt == '-v' or opt == '--supplyvoltage':
+                vs = arg
+
+#print("You have to replace all NON CONSTANT (PULSE) input and clock pulses with 0\n\n")
+#s= (input("enter file name with .cir or .txt (e.g. TT.cir):"))
+#V_value = float(input("enter value of Supply Voltage in V (e.g. 1.8): "))
+#vd = (input("Enter name of node of supply voltage source (which you have given and used in place of all supply voltages)(e.g. VDD) \n"))
+#vs = (input("Enter the name of the voltage supply (e.g. V_V20): "))
+#source = (input("enter name of supply non constant voltage source\n\n"))
 
 myinp=open(s,"r")
 shakes = open("powerLeakage.cir", "w")
@@ -22,10 +35,53 @@ for line in myinp.readlines():
     if firstv and re.match(r'^'+vs+'\s',line):
         #if re.match(r'(\d+\.?\d*)V?d?s?\s*$',line):
         #    V_value=re.match(r'(\d+\.?\d*)V?d?s?\s*$').group(1)
-        line=''
-        firstv=False
+            if re.match(r'^' + vs + '\s+\w+\s+\d\s+\d\.?\d\w+$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\d\s+\d\.?\d\w+$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\d\s+(\d\.?\d)\w+$', line).group(1)
+            elif re.match(r'^' + vs + '\s+\w+\s+\w+\s+\d\.?\d$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\w+\s+\d\.?\d$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\w+\s+(\d\.?\d)$', line).group(1)
+            elif re.match(r'^' + vs + '\s+\w+\s+\w+\s+\w+\s+\d\.?\d$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\w+\s+\w+\s+\d\.?\d$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\w+\s+\w+\s+(\d\.?\d)$', line).group(1)
+            elif re.match(r'^' + vs + '\s+\w+\s+\d\s+\d\w+$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\d\s+\d\w+$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\d\s+(\d)\w+$', line).group(1)
+            elif re.match(r'^' + vs + '\s+\w+\s+\w+\s+\d$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\w+\s+\d$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\w+\s+(\d)$', line).group(1)
+            elif re.match(r'^' + vs + '\s+\w+\s+\w+\s+\w+\s+\d$', line):
+                vdD = re.search(r'^' + vs + '\s+(\w+)\s+\w+\s+\w+\s+\d$', line).group(1)
+                V_valueD = re.search(r'^' + vs + '\s+\w+\s+\w+\s+\w+\s+(\d)$', line).group(1)
+            vd = vdD
+            V_value = float(V_valueD)
+            print(vd)
+            print(V_value)
+            line=''
+            firstv=False
+    #if re.search("pwl",line):
+    #    shakes.write(re.sub("pwl.+","0",line))
+    #    line=" "
+   # if re.search("PULSE", line):
+   #     shakes.write(re.sub("PULSE.+", "0", line))
+    #    line = " "
+    if re.search("PWL", line,flags=re.IGNORECASE):
+        shakes.write(re.sub("PWL.+", "0", line,flags=re.IGNORECASE))
+        line = " "
+    if re.search("pulse", line,flags=re.IGNORECASE):
+        shakes.write(re.sub("pulse.+", "0", line, flags=re.IGNORECASE))
+        line = " "
+
+    if re.search("SINE", line,flags=re.IGNORECASE):
+        shakes.write(re.sub("SINE.+", "0", line,flags=re.IGNORECASE))
+        line = " "
+    if re.search("COSINE", line,flags=re.IGNORECASE):
+        shakes.write(re.sub("COSINE.+", "0", line,flags=re.IGNORECASE))
+        line = " "
+
     if not done and not re.match(r'^((.endc )| (.end  ))', line):
         shakes.write(line)
+
 
 myinp.close()
 
