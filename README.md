@@ -44,35 +44,34 @@ I remove all non constant power supply voltages and calculate the product of lea
  First input is spice netlist. While executing script some more inputs are taken such as
    1. Name of Supply Voltage
    
-   2. Node name of Supply Voltage
+   2. For synchronous circuit time perod of clock and for asynchronous minimum time period among all input pulse.
    
-   3. For synchronous circuit time perod of clock and for asynchronous minimum time period among all input pulse.
-   
-   4. User has to remove all non constant voltage sources from the netlist for leakage power.
    
 # Python Power tool with example
-   1.First download or clone this repository.
+  1.First download or clone this repository.
                  
                  git clone https://github.com/CharuGupta-eng/vsdOSPowerCalc
    
-  2.To see circuit diagrams of scheamtic, go to images and there are images of circuit by their names.
+  2. To see circuit diagrams input output waveform of scheamtic, go to images and there are images of input output waveform by their names.
    
   3. Save the netlist of the cicuit, model parameters file, ngspice and python code in the same folder.
   
-  4. To see how we download ngspice, python3 and other useful things which have to download please see below in Python Power Tool Usage
-     (Dependencies) section.
+  4. To see how we download ngspice, python3 and other useful things like PANDAS module which have to download please see below in Python Power          Tool Usage(Dependencies) section.
   ### NOTE: This tool work properly in PYTHON3. It sometime create problem in exexution in PYTHON2 so i recommend to use it in PYTHON3 only.
 
 # USE PYTHON SCRIPT TO FIND Average POWER
 
 1. To run code
 
-       $ python3 POW.py
-            or
-       chmod 777 POW.py
-           ./POW.py     
-             
-2. Following window open in which you have to enter .txt file name Or .cir file name as I enter DFF_TG.cir file of DFF using transmission gate.
+       $ python3 AVPOWER.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage> -t <Time period in seconds(clock or minimum time period among all inputs>
+       OR
+       chmod 777 AVPOWER.py
+       ./AVPOWER.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage> -t <Time period in seconds(clock or minimum time period among all inputs>
+      
+      Example:
+      
+        $ python3 AVPOWER.py -i DFF_TG.cir -v V_V20 -t 0.000002   
+
 ### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
 
                                                Python scipt 
@@ -84,14 +83,8 @@ I remove all non constant power supply voltages and calculate the product of lea
                                                
  ![image](https://user-images.githubusercontent.com/66687579/86670547-62ef0f80-c012-11ea-97f8-2b481e59f6d5.png)                                              
                                          
-                                   Showing supply voltage value and node name on schematic
-                                  
-![image](https://user-images.githubusercontent.com/66687579/86589705-c6922200-bfab-11ea-9d0f-fc9b6aaa3360.png)
-                                 
-                                   
-
+    
                                          Showing Time Period In Schematic                                         
-![image](https://user-images.githubusercontent.com/66687579/86511730-81d68180-be19-11ea-8c9f-a80b9fd7058c.png)
                                   
 
  4.Finally you get average power value.
@@ -99,14 +92,15 @@ I remove all non constant power supply voltages and calculate the product of lea
 # PYTHON SCRIPT TO FIND LEAKAGE POWER
 1. Run script by writing
             
-            python3 leakage.py 
+           $ python3 Leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>
                 or 
            
-           chmod 777 leakage.py
-           ./leakage.py
-            
-2.Following window open in which you have to enter .txt file name or .cir file name as I enter TT.cir file of DFF using transmission gate after removing non constant voltage sources (pulse) and no needs to remove any other line.  
-
+           chmod 777 Leakage.py
+           ./leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>
+           
+      Example:
+       
+             
                                                     Python script
                                                     
  ![image](https://user-images.githubusercontent.com/66687579/88431652-68bd6100-ce18-11ea-93f1-7d989441756e.png)
@@ -120,9 +114,9 @@ I remove all non constant power supply voltages and calculate the product of lea
    
    
 # Python Power Tool Outputs interpretation
-  Both leakage and average switching power are displayed in Watts.
-  After running POW.py for average power clculation poweranalysis.cir and Leakage.py for leakage power calculation powerleakage.cir file are added   in your system. These are modified netlist for power calculation.
-  To view average power curve and power values you can run these netlist in ngspice.
+  Both leakage and average switching power are displayed in Watts and MicroWatts.
+  After running AVPOWER.py for average power clculation poweranalysis.cir and Leakage.py for leakage power calculation powerleakage.cir file are     added in your system. These are modified netlist for power calculation.
+  To view average power curve and power values you can run these netlist in ngspice after removing quit from the last of netlist file.
 ###  Average Switching Power netlist can be run by following command.
      $ ngspice poweranalysis.cir
      
@@ -200,21 +194,30 @@ Following steps to be followed to run tool to get average power and leakage powe
  
  4. To run code for calculating average power
      
-        $ python3 POW.py
-            or
-        chmod 777 POW.py
-           ./POW.py   
-  5. Ener the name of file, Supply voltage name, node name of supply voltage and value of value of supply voltage.
+        $ python3 AVPOWER.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage> -t <Time period in seconds(clock or minimum time period among all inputs>
+        
+        OR
+        
+        chmod 777 AVPOWER.py
+        ./AVPOWER.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage> -t <Time period in seconds(clock or minimum time period among all inputs>
+      
+      Example:
+      
+        $ python3 AVPOWER.py -i DFF_TG.cir -v V_V20 -t 0.000002   
+  
+  5. Ener the name of file, Supply voltage name, Time period.
   
   6. Average power value is displayed.
   
   7. To run code for calculating leakage power
       
 
-         $ python3 Leakage.py
-            or
-         chmod 777 Leakage.py
-           ./POW.py   
+           $ python3 Leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>
+               
+               or 
+           
+           chmod 777 Leakage.py
+           ./leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>  
    8. Ener the name of file after removing all non constant voltage source from netlist, Supply voltage name, node name of supply voltage and value       of value of supply voltage.
    
    9. Leakage power value is displayed.
@@ -222,7 +225,7 @@ Following steps to be followed to run tool to get average power and leakage powe
 
 
 ## Unit of output displayed by power analysis tool
-Both leakage and average switching power are displayed in Watts.
+Both leakage and average switching power are displayed in Watts and MicroWatts.
 
 ### If there is an issue running tool, please contact administrator for support or report in “issues” section of GitHub
 
