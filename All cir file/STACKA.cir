@@ -1,0 +1,76 @@
+* source STACK
+M_M104         QQ QQBAR N104355 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M102         N104297 QQBAR VDD VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+C_C11         0 QQ  20p  
+M_M96         N103669 N103551 N103775 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M89         QQ N104481 N103845 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M80         N105219 N104553 VDD VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M94         N103717 N103551 VDD VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M98         N104001 N103845 VDD VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M99         QQBAR N103845 N104001 VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M101         N104355 QQBAR 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M91         N103551 N104553 N105219 VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M103         QQ QQBAR N104297 VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+M_M100         QQBAR N103845 N104059 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M97         N104059 N103845 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M79         N105273 N104553 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M88         N103669 N104481 N104553 VDD MbreakP  
++ L=.18u  
++ W=.72u         
+V_V58         N104481 0  
++PULSE 0 1.8V 0u 1n 1n 2u 4u
+M_M90         N103845 N104481 N103669 VDD MbreakP  
++ L=.18u  
++ W=.72u         
+M_M93         N103775 N103551 0 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+M_M92         N103551 N104553 N105273 0 Mbreakn  
++ L=.18u  
++ W=.36u         
+V_V57         N105173 0  
++PULSE 0 1.8V 0u 1n 1n 3u 6u
+M_M87         N104553 N104481 N105173 0 MbreakN  
++ L=.18u  
++ W=.72u         
+M_M95         N103669 N103551 N103717 VDD Mbreakp  
++ L=.18u  
++ W=.36u         
+V_V51         VDD 0 1.8Vdc
+.MODEL MBREAKP PMOS
+.MODEL MBREAKN NMOS  
+.tran 2e-0 20e-6 0e-6
+.control
+run 
+PLOT V(QQ)
+
+.endc
+.end 
