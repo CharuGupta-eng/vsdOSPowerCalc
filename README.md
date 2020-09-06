@@ -75,16 +75,20 @@ I remove all non constant power supply voltages and calculate the product of lea
 ### NOTE : .tran 1e-0  20e-6(end value according to you)  line must be present that means transition analysis. 
 
                                                Python scipt 
-![image](https://user-images.githubusercontent.com/66687579/86670466-494dc800-c012-11ea-8e05-cf1d5ecee6d1.png)
+
+
+![image](https://user-images.githubusercontent.com/66687579/92335024-9ac91080-f0b0-11ea-8b1c-42229a81b6fe.png)
+
+
 
                                               
 
                                                DFFTG.cir file 
                                                
- ![image](https://user-images.githubusercontent.com/66687579/86670547-62ef0f80-c012-11ea-97f8-2b481e59f6d5.png)                                              
+ ![image](https://user-images.githubusercontent.com/66687579/92334998-62c1cd80-f0b0-11ea-8335-bff125553a05.png)                                             
                                          
     
-                                         Showing Time Period In Schematic                                         
+                                                                            
                                   
 
  4.Finally you get average power value.
@@ -99,11 +103,14 @@ I remove all non constant power supply voltages and calculate the product of lea
            ./leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>
            
       Example:
+     
+        $ python3 Leakage.py -i DFF_TG.cir -v V_V20  
+      
        
              
                                                     Python script
                                                     
- ![image](https://user-images.githubusercontent.com/66687579/88431652-68bd6100-ce18-11ea-93f1-7d989441756e.png)
+ ![image](https://user-images.githubusercontent.com/66687579/92335031-ae747700-f0b0-11ea-935b-ed304b7bc9b4.png)
  
 
                                                    
@@ -218,6 +225,10 @@ Following steps to be followed to run tool to get average power and leakage powe
            
            chmod 777 Leakage.py
            ./leakage.py -i <enter .txt file name Or .cir file> -v <Name of supply Voltage>  
+           
+       Example:
+        
+          $ python3 Leakage.py -i DFF_TG.cir -v V_V20  
    8. Ener the name of file after removing all non constant voltage source from netlist, Supply voltage name, node name of supply voltage and value       of value of supply voltage.
    
    9. Leakage power value is displayed.
