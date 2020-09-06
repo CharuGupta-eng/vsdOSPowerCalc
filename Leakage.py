@@ -55,8 +55,8 @@ for line in myinp.readlines():
                 V_valueD = re.search(r'^' + vs + '\s+\w+\s+\w+\s+\w+\s+(\d)$', line).group(1)
             vd = vdD
             V_value = float(V_valueD)
-            print(vd)
-            print(V_value)
+           # print(vd)
+           # print(V_value)
             line=''
             firstv=False
     #if re.search("pwl",line):
